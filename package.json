@@ -1,20 +1,16 @@
 {
   "name": "@repo/root",
   "type": "module",
-  "packageManager": "pnpm@8.15.1",
-  "engines": {
-    "node": ">=20",
-    "pnpm": ">=8"
-  },
   "scripts": {
     "build": "pnpm run --filter @repo/build build",
     "commit": "cz",
     "dev": "pnpm run --filter @repo/build dev",
-    "lint:es": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "postinstall": "pnpm run script:genIgnoreFiles",
     "lint:cspell": "cspell --no-summary --no-progress",
+    "lint:es": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:prettier": "prettier --ignore-unknown --write .",
     "prepare": "husky install",
-    "script:genIgnoreFiles": "tsx ./scripts/genIgnoreFiles.ts",
-    "postinstall": "pnpm run script:genIgnoreFiles"
+    "script:genIgnoreFiles": "tsx ./scripts/genIgnoreFiles.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -33,6 +29,7 @@
     "@antfu/eslint-config": "^2.6.4",
     "@commitlint/cli": "^18.5.0",
     "@commitlint/config-conventional": "^18.5.0",
+    "@eslint/eslintrc": "^3.0.0",
     "@repo/app": "workspace:*",
     "@repo/build": "workspace:*",
     "@repo/tsconfig": "workspace:*",
@@ -42,6 +39,7 @@
     "@tsconfig/strictest": "^2.0.2",
     "@tsconfig/vite-react": "^3.0.0",
     "@types/eslint": "^8.56.2",
+    "@types/eslint__eslintrc": "^2.1.1",
     "@types/fs-extra": "^11.0.4",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
@@ -66,8 +64,15 @@
     "pathe": "^1.1.2",
     "prepend-file": "^2.0.1",
     "prettier": "^3.2.4",
+    "sort-json": "^2.0.1",
+    "sort-package-json": "^2.7.0",
     "tsx": "^4.7.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8"
+  },
+  "packageManager": "pnpm@8.15.1",
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8"
   }
 }

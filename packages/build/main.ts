@@ -1,1 +1,1 @@
-import '@repo/app/main'
+import "@repo/app/main";

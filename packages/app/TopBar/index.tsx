@@ -1,16 +1,16 @@
-import { Box, Typography } from '@mui/joy'
-import type { SxProps } from '@mui/joy/styles/types'
-import { sxUtils } from '@repo/utils/sx'
+import { Box, Typography } from "@mui/joy";
+import type { SxProps } from "@mui/joy/styles/types";
+import { sxUtils } from "@repo/utils/sx";
 
-import { ModeToggle } from './ModeSwitch'
+import { ModeToggle } from "./ModeSwitch";
 
 const styles = {
-  root: theme => ({
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    height: '64px',
+  root: (theme) => ({
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    height: "64px",
     gap: theme.spacing(2),
     px: 2,
     bgcolor: theme.palette.background.level1,
@@ -19,7 +19,7 @@ const styles = {
     flex: 1,
     ...sxUtils.noWrap,
   },
-} satisfies Record<string, SxProps>
+} satisfies Record<string, SxProps>;
 
 function TopBar() {
   return (
@@ -29,7 +29,7 @@ function TopBar() {
       </Typography>
       <ModeToggle />
     </Box>
-  )
+  );
 }
 
-export { TopBar }
+export { TopBar };

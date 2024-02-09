@@ -1,9 +1,9 @@
-import { Box, Container } from '@mui/joy'
-import type { SxProps } from '@mui/joy/styles/types'
-import { sxUtils } from '@repo/utils/sx'
-import type { ReactNode } from 'react'
+import { Box, Container } from "@mui/joy";
+import type { SxProps } from "@mui/joy/styles/types";
+import { sxUtils } from "@repo/utils/sx";
+import type { ReactNode } from "react";
 
-import { TopBar } from './TopBar'
+import { TopBar } from "./TopBar";
 
 const styles = {
   root: {
@@ -11,12 +11,12 @@ const styles = {
   },
   container: {
     ...sxUtils.flexFill,
-    flexDirection: 'column',
-    justifyContent: 'center',
+    flexDirection: "column",
+    justifyContent: "center",
     mt: 2,
     mb: 2,
   },
-} satisfies Record<string, SxProps>
+} satisfies Record<string, SxProps>;
 
 function Layout({ children }: { children: ReactNode }) {
   return (
@@ -24,7 +24,7 @@ function Layout({ children }: { children: ReactNode }) {
       <TopBar />
       <Container sx={styles.container}>{children}</Container>
     </Box>
-  )
+  );
 }
 
-export { Layout }
+export { Layout };

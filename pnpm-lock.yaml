@@ -50,6 +50,9 @@ importers:
       "@commitlint/config-conventional":
         specifier: ^18.5.0
         version: 18.5.0
+      "@eslint/eslintrc":
+        specifier: ^3.0.0
+        version: 3.0.0
       "@repo/app":
         specifier: workspace:*
         version: link:packages/app
@@ -77,6 +80,9 @@ importers:
       "@types/eslint":
         specifier: ^8.56.2
         version: 8.56.2
+      "@types/eslint__eslintrc":
+        specifier: ^2.1.1
+        version: 2.1.1
       "@types/fs-extra":
         specifier: ^11.0.4
         version: 11.0.4
@@ -149,6 +155,12 @@ importers:
       prettier:
         specifier: ^3.2.4
         version: 3.2.4
+      sort-json:
+        specifier: ^2.0.1
+        version: 2.0.1
+      sort-package-json:
+        specifier: ^2.7.0
+        version: 2.7.0
       tsx:
         specifier: ^4.7.0
         version: 4.7.0
@@ -1786,6 +1798,26 @@ packages:
       - supports-color
     dev: true
 
+  /@eslint/eslintrc@3.0.0:
+    resolution:
+      {
+        integrity: sha512-R8p3jN1kdWvFRiRfgpUxZ4PMgfJJFt6NuLGDnnqLb7RKmsd5Xa0KqRMjmaqRO7e38ZbG/9zKPgDjeJeqsDofSA==,
+      }
+    engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
+    dependencies:
+      ajv: 6.12.6
+      debug: 4.3.4
+      espree: 9.6.1
+      globals: 13.24.0
+      ignore: 5.3.0
+      import-fresh: 3.3.0
+      js-yaml: 4.1.0
+      minimatch: 3.1.2
+      strip-json-comments: 3.1.1
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@eslint/js@8.56.0:
     resolution:
       {
@@ -2487,6 +2519,15 @@ packages:
     dependencies:
       "@types/estree": 1.0.5
       "@types/json-schema": 7.0.15
+    dev: true
+
+  /@types/eslint__eslintrc@2.1.1:
+    resolution:
+      {
+        integrity: sha512-LI51vVv3N7WI4+fM7Xkh1+ciLA1gtuQPgXdKdece+vD8f/G2hrFqtwb4YIQyIM6VXpRM4vSy1PW5y3yuHK+Y2w==,
+      }
+    dependencies:
+      "@types/eslint": 8.56.2
     dev: true
 
   /@types/estree@1.0.5:
@@ -4167,12 +4208,44 @@ packages:
     engines: { node: ">=0.10.0" }
     dev: true
 
+  /detect-indent@5.0.0:
+    resolution:
+      {
+        integrity: sha512-rlpvsxUtM0PQvy9iZe640/IWwWYyBsTApREbA1pHOpmOUIl9MkP/U4z7vTtg4Oaojvqhxt7sdufnT0EzGaR31g==,
+      }
+    engines: { node: ">=4" }
+    dev: true
+
   /detect-indent@6.1.0:
     resolution:
       {
         integrity: sha512-reYkTUJAZb9gUuZ2RvVCNhVHdg62RHnJ7WJl8ftMi4diZ6NWlciOzQN88pUhSELEwflJht4oQDv0F0BMlwaYtA==,
       }
     engines: { node: ">=8" }
+    dev: true
+
+  /detect-indent@7.0.1:
+    resolution:
+      {
+        integrity: sha512-Mc7QhQ8s+cLrnUfU/Ji94vG/r8M26m8f++vyres4ZoojaRDpZ1eSIh/EpzLNwlWuvzSZ3UbDFspjFvTDXe6e/g==,
+      }
+    engines: { node: ">=12.20" }
+    dev: true
+
+  /detect-newline@2.1.0:
+    resolution:
+      {
+        integrity: sha512-CwffZFvlJffUg9zZA0uqrjQayUTC8ob94pnr5sFwaVv3IOmkfUHcWH+jXaQK3askE51Cqe8/9Ql/0uXNwqZ8Zg==,
+      }
+    engines: { node: ">=0.10.0" }
+    dev: true
+
+  /detect-newline@4.0.1:
+    resolution:
+      {
+        integrity: sha512-qE3Veg1YXzGHQhlA6jzebZN2qVf6NX+A7m7qlhCGG30dJixrAQhYOsJjsnBjJkCSmuOPpCk30145fr8FV0bzog==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
     dev: true
 
   /dir-glob@3.0.1:
@@ -5566,6 +5639,13 @@ packages:
       resolve-pkg-maps: 1.0.0
     dev: true
 
+  /git-hooks-list@3.1.0:
+    resolution:
+      {
+        integrity: sha512-LF8VeHeR7v+wAbXqfgRlTSX/1BJR9Q1vEMR8JAz1cEg6GX07+zyj3sAdDvYjj/xnlIfVuGgj4qBei1K3hKH+PA==,
+      }
+    dev: true
+
   /git-raw-commits@2.0.11:
     resolution:
       {
@@ -5717,6 +5797,20 @@ packages:
       ignore: 5.3.0
       merge2: 1.4.1
       slash: 3.0.0
+    dev: true
+
+  /globby@13.2.2:
+    resolution:
+      {
+        integrity: sha512-Y1zNGV+pzQdh7H39l9zgB4PJqjRNqydvdYCDG4HFXM4XuvSaQQlEc91IU1yALL8gUTDomgBAfz3XJdmUS+oo0w==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
+    dependencies:
+      dir-glob: 3.0.1
+      fast-glob: 3.3.2
+      ignore: 5.3.0
+      merge2: 1.4.1
+      slash: 4.0.0
     dev: true
 
   /gopd@1.0.1:
@@ -6251,6 +6345,14 @@ packages:
         integrity: sha512-yvkRyxmFKEOQ4pNXCmJG5AEQNlXJS5LaONXo5/cLdTZdWvsZ1ioJEonLGAosKlMWE8lwUy/bJzMjcw8az73+Fg==,
       }
     engines: { node: ">=0.10.0" }
+    dev: true
+
+  /is-plain-obj@4.1.0:
+    resolution:
+      {
+        integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==,
+      }
+    engines: { node: ">=12" }
     dev: true
 
   /is-regex@1.1.4:
@@ -8196,6 +8298,14 @@ packages:
     engines: { node: ">=8" }
     dev: true
 
+  /slash@4.0.0:
+    resolution:
+      {
+        integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==,
+      }
+    engines: { node: ">=12" }
+    dev: true
+
   /slice-ansi@5.0.0:
     resolution:
       {
@@ -8216,6 +8326,41 @@ packages:
     dependencies:
       ansi-styles: 6.2.1
       is-fullwidth-code-point: 5.0.0
+    dev: true
+
+  /sort-json@2.0.1:
+    resolution:
+      {
+        integrity: sha512-s8cs2bcsQCzo/P2T/uoU6Js4dS/jnX8+4xunziNoq9qmSpZNCrRIAIvp4avsz0ST18HycV4z/7myJ7jsHWB2XQ==,
+      }
+    hasBin: true
+    dependencies:
+      detect-indent: 5.0.0
+      detect-newline: 2.1.0
+      minimist: 1.2.8
+    dev: true
+
+  /sort-object-keys@1.1.3:
+    resolution:
+      {
+        integrity: sha512-855pvK+VkU7PaKYPc+Jjnmt4EzejQHyhhF33q31qG8x7maDzkeFhAAThdCYay11CISO+qAMwjOBP+fPZe0IPyg==,
+      }
+    dev: true
+
+  /sort-package-json@2.7.0:
+    resolution:
+      {
+        integrity: sha512-6AayF8bp6L+WROgpbhTMUtB9JSFmpGHjmW7DyaNPS1HwlTw2oSVlUUtlkHSEZmg5o89F3zvLBZNvMeZ1T4fjQg==,
+      }
+    hasBin: true
+    dependencies:
+      detect-indent: 7.0.1
+      detect-newline: 4.0.1
+      get-stdin: 9.0.0
+      git-hooks-list: 3.1.0
+      globby: 13.2.2
+      is-plain-obj: 4.1.0
+      sort-object-keys: 1.1.3
     dev: true
 
   /source-map-js@1.0.2:
