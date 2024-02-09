@@ -1,11 +1,12 @@
 name: GitHub Pages
-
 on:
   push:
     branches: main
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
@@ -31,7 +32,7 @@ jobs:
         run: pnpm install
       - run: pnpm build --base=/${{ github.event.repository.name }}/
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: packages/build/dist
