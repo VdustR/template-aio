@@ -15,7 +15,6 @@ const flexFill = {
 } satisfies SxProps;
 
 const noWrap = {
-  maxWidth: "-webkit-fill-available",
   whiteSpace: "nowrap",
   overflow: "hidden",
   textOverflow: "ellipsis",
