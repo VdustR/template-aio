@@ -1,0 +1,4 @@
+{
+  "extends": ["@repo/tsconfig/node/tsconfig"],
+  "include": ["vite.config.ts"],
+}

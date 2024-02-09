@@ -1,0 +1,23 @@
+{
+  "allowCompoundWords": true,
+  "enableFiletypes": ["*"],
+  "enableGlobDot": true,
+  "files": ["**/*"],
+  "ignorePaths": [
+    ".*ignore",
+    "**/__snapshots__/**",
+    "**/*.svg",
+    "/.git",
+    "/.vscode/extensions.json",
+    "/*.code-workspace",
+    "/packages/app/.env.*.local",
+    "/packages/app/.env.local",
+    "/packages/app/.env.site.*",
+    "/packages/app/src/shared/g11n/data",
+    "/pnpm-lock.yaml"
+  ],
+  "includeRegExpList": ["[ -~]"],
+  "useGitignore": true,
+  "version": "0.2",
+  "words": ["antfu", "nums", "nvmrc", "pathe", "tsdoc", "zustand"]
+}
