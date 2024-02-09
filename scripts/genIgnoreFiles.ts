@@ -39,7 +39,7 @@ const ignoreFiles = await fastGlob(".*ignore", {
   ignore: [".gitignore"],
 });
 
-fs.appendFileSync(
+await fs.appendFile(
   ".prettierignore",
   ["/pnpm-lock.yaml"].map((line) => line + eol).join(""),
 );
