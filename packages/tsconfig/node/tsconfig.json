@@ -1,8 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Repo Node",
-  "compilerOptions": {
-    "noEmit": true,
-  },
-  "extends": ["@tsconfig/node20/tsconfig", "@tsconfig/strictest/tsconfig"],
+  "extends": [
+    "@tsconfig/node20/tsconfig",
+    "@tsconfig/strictest/tsconfig",
+    "@repo/tsconfig/checkJs/tsconfig",
+    "@repo/tsconfig/noEmit/tsconfig"
+  ]
 }

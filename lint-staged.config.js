@@ -6,9 +6,10 @@ const config = isFormat
   ? {
       "**/*.json": "sort-json",
       "**/package.json": "sort-package-json",
-      "**/*": "prettier --ignore-unknown --write",
       "**/*.{ts,tsx,js,jsx,cjs}":
         "eslint --report-unused-disable-directives --fix --max-warnings=0",
+      "**/*.{css,js,jsx,ts,tsx}": "stylelint --fix",
+      "**/*": "prettier --ignore-unknown --write",
     }
   : {
       "**/*": "cspell lint --no-must-find-files",

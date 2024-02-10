@@ -1,5 +1,10 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "Repo React",
-  "extends": ["@tsconfig/vite-react/tsconfig", "@tsconfig/strictest/tsconfig"],
+  "extends": [
+    "@tsconfig/vite-react/tsconfig",
+    "@tsconfig/strictest/tsconfig",
+    "@repo/tsconfig/checkJs/tsconfig",
+    "@repo/tsconfig/noEmit/tsconfig"
+  ]
 }

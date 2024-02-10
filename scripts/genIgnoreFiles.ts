@@ -32,17 +32,19 @@ await prependFile(path.resolve(repoDirname, ".eslintignore"), "!.*\n");
 
 await fs.copy(".gitignore", ".prettierignore");
 
+await fs.appendFile(
+  ".prettierignore",
+  ["/pnpm-lock.yaml"].map((line) => line + eol).join(""),
+);
+
+await fs.copy(".gitignore", ".stylelintignore");
+
 const ignoreFiles = await fastGlob(".*ignore", {
   cwd: repoDirname,
   dot: true,
   onlyFiles: true,
   ignore: [".gitignore"],
 });
-
-await fs.appendFile(
-  ".prettierignore",
-  ["/pnpm-lock.yaml"].map((line) => line + eol).join(""),
-);
 
 const packagePaths = (
   await fastGlob("**/package.json", {

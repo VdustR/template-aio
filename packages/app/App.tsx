@@ -9,7 +9,7 @@ import { Layout } from "./layout";
 const styles = {
   box: {
     ...sxUtils.flexFill,
-    alignItems: "center",
+    alignItems: "centesr",
   },
   title: {
     fontVariantNumeric: "tabular-nums",
