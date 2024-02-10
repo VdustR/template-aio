@@ -35,6 +35,7 @@
       { "rule": "*semi", "severity": "off" },
       { "rule": "format/*", "severity": "off" },
       { "rule": "prettier/prettier", "severity": "off" },
+      { "rule": "simple-import-sort/*", "severity": "off" },
       { "rule": "style/*", "severity": "off" },
     ],
     "eslint.validate": [
