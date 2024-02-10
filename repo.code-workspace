@@ -27,6 +27,13 @@
     "eslint.rules.customizations": [
       { "rule": "prettier/prettier", "severity": "off" },
     ],
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "markdown",
+      "typescript",
+      "typescriptreact",
+    ],
     "less.validate": false,
     "scss.validate": false,
     "stylelint.packageManager": "pnpm",

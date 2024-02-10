@@ -1,5 +1,6 @@
 import antfu from "@antfu/eslint-config";
 import { FlatCompat } from "@eslint/eslintrc";
+import * as mdx from "eslint-plugin-mdx";
 // @ts-expect-error -- no types
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import tsdoc from "eslint-plugin-tsdoc";
@@ -13,6 +14,7 @@ export default antfu(
     jsonc: false,
     yaml: false,
     toml: false,
+    markdown: false,
   },
   ...compat.config({
     extends: [
@@ -31,5 +33,15 @@ export default antfu(
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
     },
+  },
+  {
+    ...mdx.flat,
+    processor: mdx.createRemarkProcessor({
+      lintCodeBlocks: true,
+      languageMapper: {},
+    }),
+  },
+  {
+    ...mdx.flatCodeBlocks,
   },
 );

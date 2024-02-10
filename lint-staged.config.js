@@ -6,7 +6,7 @@ const config = isFormat
   ? {
       "**/*.json": "sort-json",
       "**/package.json": "sort-package-json",
-      "**/*.{ts,tsx,js,jsx,cjs}":
+      "**/*.{cjs,js,jsx,md,mdx,ts,tsx}":
         "eslint --report-unused-disable-directives --fix --max-warnings=0",
       "**/*.{css,js,jsx,ts,tsx}": "stylelint --fix",
       "**/*": "prettier --ignore-unknown --write",

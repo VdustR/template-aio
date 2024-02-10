@@ -1,5 +1,5 @@
 import { CssBaseline, CssVarsProvider } from "@mui/joy";
-import { ComponentProps, ReactNode } from "react";
+import type { ComponentProps, ReactNode } from "react";
 
 const defaultMode: NonNullable<
   ComponentProps<typeof CssVarsProvider>["defaultMode"]

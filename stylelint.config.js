@@ -11,7 +11,7 @@ const config = {
   fix: true,
   overrides: [
     {
-      files: ["*.js", "*.jsx", "*.ts", "*.tsx"],
+      files: ["*.cjs", "*.js", "*.jsx", "*.ts", "*.tsx"],
       customSyntax: "postcss-styled-syntax",
     },
   ],
