@@ -9,7 +9,7 @@
     "lint:cspell": "cspell --no-summary --no-progress",
     "lint:es": "eslint . --fix --report-unused-disable-directives --max-warnings 0",
     "lint:prettier": "prettier --ignore-unknown --write .",
-    "lint:style": "stylelint \"**/*.{css,js,jsx,ts,tsx}\" --fix -i .stylelintignore",
+    "lint:style": "stylelint '**/*.{css,js,jsx,ts,tsx}' --fix -i .stylelintignore",
     "prepare": "husky install",
     "script:genIgnoreFiles": "tsx ./scripts/genIgnoreFiles.ts"
   },
@@ -42,6 +42,7 @@
     "@types/eslint": "^8.56.2",
     "@types/eslint__eslintrc": "^2.1.1",
     "@types/fs-extra": "^11.0.4",
+    "@types/lint-staged": "^13.3.0",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",

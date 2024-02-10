@@ -87,6 +87,9 @@ importers:
       '@types/fs-extra':
         specifier: ^11.0.4
         version: 11.0.4
+      '@types/lint-staged':
+        specifier: ^13.3.0
+        version: 13.3.0
       '@types/react':
         specifier: ^18.2.43
         version: 18.2.48
@@ -2039,6 +2042,10 @@ packages:
     resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
     dependencies:
       '@types/node': 20.11.5
+    dev: true
+
+  /@types/lint-staged@13.3.0:
+    resolution: {integrity: sha512-WxGjVP+rA4OJlEdbZdT9MS9PFKQ7kVPhLn26gC+2tnBWBEFEj/KW+IbFfz6sxdxY5U6V7BvyF+3BzCGsAMHhNg==}
     dev: true
 
   /@types/mdast@3.0.15:

@@ -2,6 +2,9 @@ import process from "node:process";
 // eslint-disable-next-line dot-notation -- Property 'TYPE' comes from an index signature, so it must be accessed with ['TYPE'].ts(4111)
 const isFormat = process.env["TYPE"] === "format";
 
+/**
+ * @type {import('lint-staged').Config}
+ */
 const config = isFormat
   ? {
       "**/*.json": "sort-json",
