@@ -32,6 +32,9 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
+      remeda:
+        specifier: ^1.40.1
+        version: 1.40.1
       ts-toolbelt:
         specifier: ^9.6.0
         version: 9.6.0
@@ -6665,6 +6668,10 @@ packages:
       mdast-util-to-markdown: 2.1.0
       unified: 11.0.4
     dev: true
+
+  /remeda@1.40.1:
+    resolution: {integrity: sha512-p5HzqKlMK02mvnalm3mavRaUeRljqKoE7r0QgDDzbZ9C0jFowisYLPU9e52gCZOd7Dn6KAWTPbVucJtcPfAIxA==}
+    dev: false
 
   /repeat-string@1.6.1:
     resolution: {integrity: sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==}

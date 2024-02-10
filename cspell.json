@@ -17,5 +17,14 @@
   "includeRegExpList": ["[ -~]"],
   "useGitignore": true,
   "version": "0.2",
-  "words": ["antfu", "jsdoc", "nums", "nvmrc", "pathe", "tsdoc", "zustand"]
+  "words": [
+    "antfu",
+    "jsdoc",
+    "nums",
+    "nvmrc",
+    "pathe",
+    "remeda",
+    "tsdoc",
+    "zustand"
+  ]
 }
