@@ -8,12 +8,10 @@
     "**/__snapshots__/**",
     "**/*.svg",
     "/.git",
-    "/.vscode/extensions.json",
     "/*.code-workspace",
     "/packages/app/.env.*.local",
     "/packages/app/.env.local",
     "/packages/app/.env.site.*",
-    "/packages/app/src/shared/g11n/data",
     "/pnpm-lock.yaml"
   ],
   "includeRegExpList": ["[ -~]"],
