@@ -1,4 +1,4 @@
 {
   "extends": ["@repo/tsconfig/node/tsconfig"],
-  "exclude": ["node_modules", "packages"],
+  "include": ["*.config.cjs", "*.config.js", "*.config.ts"]
 }
