@@ -7,7 +7,7 @@
     ],
   },
   "folders": [
-    { "path": ".", "name": "template-joy" },
+    { "path": ".", "name": "root" },
     { "path": "packages/app" },
     { "path": "packages/build" },
     { "path": "packages/tsconfig" },
@@ -45,6 +45,6 @@
       "typescript",
       "typescriptreact",
     ],
-    "typescript.tsdk": "template-joy/node_modules/typescript/lib",
+    "typescript.tsdk": "root/template-aio/node_modules/typescript/lib",
   },
 }
