@@ -9,3 +9,5 @@ My all-in-one template for web development.
 ## License
 
 [MIT](./LICENSE)
+
+Copyright (c) 2024 ViPro <vdustr@gmail.com> (http://vdustr.dev)
