@@ -32,12 +32,6 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
-      remeda:
-        specifier: ^1.40.1
-        version: 1.40.1
-      ts-toolbelt:
-        specifier: ^9.6.0
-        version: 9.6.0
       zod:
         specifier: ^3.22.4
         version: 3.22.4
@@ -87,9 +81,6 @@ importers:
       '@types/eslint__eslintrc':
         specifier: ^2.1.1
         version: 2.1.1
-      '@types/fs-extra':
-        specifier: ^11.0.4
-        version: 11.0.4
       '@types/lint-staged':
         specifier: ^13.3.0
         version: 13.3.0
@@ -144,27 +135,21 @@ importers:
       eslint-ts-patch:
         specifier: 8.56.0-0
         version: 8.56.0-0
-      fast-glob:
-        specifier: ^3.3.2
-        version: 3.3.2
-      fs-extra:
-        specifier: ^11.2.0
-        version: 11.2.0
       husky:
         specifier: ^8.0.3
         version: 8.0.3
       lint-staged:
         specifier: ^15.2.0
         version: 15.2.0
-      pathe:
-        specifier: ^1.1.2
-        version: 1.1.2
       postcss-styled-syntax:
         specifier: ^0.6.4
         version: 0.6.4(postcss@8.4.33)
       prettier:
         specifier: ^3.2.4
         version: 3.2.4
+      simple-ignore:
+        specifier: ^0.1.1
+        version: 0.1.1(typescript@5.3.3)
       sort-json:
         specifier: ^2.0.1
         version: 2.0.1
@@ -2017,13 +2002,6 @@ packages:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
 
-  /@types/fs-extra@11.0.4:
-    resolution: {integrity: sha512-yTbItCNreRooED33qjunPthRcSjERP1r4MqCZc7wv0u2sUkzTFp45tgUfS5+r7FrZPdmCCNflLhVSP/o+SemsQ==}
-    dependencies:
-      '@types/jsonfile': 6.1.4
-      '@types/node': 20.11.5
-    dev: true
-
   /@types/hast@3.0.4:
     resolution: {integrity: sha512-WPs+bbQw5aCj+x6laNGWLH3wviHtoCv/P3+otBhbOhJgG8qtpdAMlTCxLtsTWA7LH1Oh/bFCHsBn0TPS5m30EQ==}
     dependencies:
@@ -2038,14 +2016,12 @@ packages:
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
     dev: true
 
-  /@types/jsonfile@6.1.4:
-    resolution: {integrity: sha512-D5qGUYwjvnNNextdU59/+fI+spnwtTFmyQP0h+PfIOSkNfpU6AOICUOkm4i0OnSk+NyjdPJrxCDro0sJsWlRpQ==}
-    dependencies:
-      '@types/node': 20.11.5
-    dev: true
-
   /@types/lint-staged@13.3.0:
     resolution: {integrity: sha512-WxGjVP+rA4OJlEdbZdT9MS9PFKQ7kVPhLn26gC+2tnBWBEFEj/KW+IbFfz6sxdxY5U6V7BvyF+3BzCGsAMHhNg==}
+    dev: true
+
+  /@types/lodash@4.14.202:
+    resolution: {integrity: sha512-OvlIYQK9tNneDlS0VN54LLd5uiPCBOp7gS5Z0f1mjoJYBrtStzgmJBxONW3U6OZqdtNzZPmn9BS/7WI7BFFcFQ==}
     dev: true
 
   /@types/mdast@3.0.15:
@@ -2933,6 +2909,11 @@ packages:
   /commander@11.1.0:
     resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
     engines: {node: '>=16'}
+    dev: true
+
+  /commander@12.0.0:
+    resolution: {integrity: sha512-MwVNWlYjDTtOjX5PiD7o5pK0UrFU/OYgcJfjjK4RaHZETNtjJqrZa9Y9ds88+A+f+d5lv+561eZ+yCKoS3gbAA==}
+    engines: {node: '>=18'}
     dev: true
 
   /comment-json@4.2.3:
@@ -6652,10 +6633,6 @@ packages:
       unified: 11.0.4
     dev: true
 
-  /remeda@1.40.1:
-    resolution: {integrity: sha512-p5HzqKlMK02mvnalm3mavRaUeRljqKoE7r0QgDDzbZ9C0jFowisYLPU9e52gCZOd7Dn6KAWTPbVucJtcPfAIxA==}
-    dev: false
-
   /repeat-string@1.6.1:
     resolution: {integrity: sha512-PV0dzCYDNfRi1jCDbJzpW7jNNDRuCOG/jI5ctQcGKt/clZD+YcPS3yIlWuTJMmESC8aevCFmWJy5wjAFgNqN6w==}
     engines: {node: '>=0.10'}
@@ -6919,6 +6896,23 @@ packages:
   /signal-exit@4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
+    dev: true
+
+  /simple-ignore@0.1.1(typescript@5.3.3):
+    resolution: {integrity: sha512-cjhq/SuNlIR7ViHkVN3MWR4uPVgt86IeygiyA6XOeuhZGBKsZYitSpsyIo2HsjyRqrvCZ1sFZuDopDn1TbtRYA==}
+    hasBin: true
+    dependencies:
+      '@types/lodash': 4.14.202
+      commander: 12.0.0
+      cosmiconfig: 9.0.0(typescript@5.3.3)
+      fast-glob: 3.3.2
+      fs-extra: 11.2.0
+      lodash: 4.17.21
+      object-inspect: 1.13.1
+      pathe: 1.1.2
+      ts-toolbelt: 9.6.0
+    transitivePeerDependencies:
+      - typescript
     dev: true
 
   /sisteransi@1.0.5:
@@ -7406,7 +7400,7 @@ packages:
 
   /ts-toolbelt@9.6.0:
     resolution: {integrity: sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==}
-    dev: false
+    dev: true
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
