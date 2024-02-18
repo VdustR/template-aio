@@ -69,15 +69,6 @@ importers:
       '@total-typescript/ts-reset':
         specifier: ^0.5.1
         version: 0.5.1
-      '@tsconfig/node20':
-        specifier: ^20.1.2
-        version: 20.1.2
-      '@tsconfig/strictest':
-        specifier: ^2.0.2
-        version: 2.0.2
-      '@tsconfig/vite-react':
-        specifier: ^3.0.0
-        version: 3.0.0
       '@types/eslint':
         specifier: ^8.56.2
         version: 8.56.2
@@ -102,6 +93,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^4.2.1
         version: 4.2.1(vite@5.0.12)
+      '@vp-tw/tsconfig':
+        specifier: ^1.0.0
+        version: 1.0.0
       commitizen:
         specifier: ^4.3.0
         version: 4.3.0(@types/node@20.11.5)(typescript@5.3.3)
@@ -1927,8 +1921,8 @@ packages:
     resolution: {integrity: sha512-madaWq2k+LYMEhmcp0fs+OGaLFk0OenpHa4gmI4VEmCKX4PJntQ6fnnGADVFrVkBj0wIdAlQnK/MrlYTHsa1gQ==}
     dev: true
 
-  /@tsconfig/strictest@2.0.2:
-    resolution: {integrity: sha512-jt4jIsWKvUvuY6adJnQJlb/UR7DdjC8CjHI/OaSQruj2yX9/K6+KOvDt/vD6udqos/FUk5Op66CvYT7TBLYO5Q==}
+  /@tsconfig/strictest@2.0.3:
+    resolution: {integrity: sha512-MroLvRhMbqtXI5WBSwoomro6OQS4xnCoudUrMb20JO0vLKUs0bAaCEcvM/immEBSJjFAK1l6jW1oAO8q3Ancrg==}
     dev: true
 
   /@tsconfig/vite-react@3.0.0:
@@ -2378,6 +2372,14 @@ packages:
       vite: 5.0.12(@types/node@20.11.5)
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@vp-tw/tsconfig@1.0.0:
+    resolution: {integrity: sha512-JezVOxUmtv5QumGX6+43U0/LaAl1wOlAvQmrFL+vAIh0ZfPa1BuXPuoRnRLXp4vV7Cl/KRVLIQf0PWDKt23KRQ==}
+    dependencies:
+      '@tsconfig/node20': 20.1.2
+      '@tsconfig/strictest': 2.0.3
+      '@tsconfig/vite-react': 3.0.0
     dev: true
 
   /@vue/compiler-core@3.4.18:

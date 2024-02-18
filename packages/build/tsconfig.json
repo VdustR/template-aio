@@ -1,4 +1,4 @@
 {
-  "extends": ["@repo/tsconfig/node/tsconfig"],
-  "include": ["vite.config.ts"],
+  "extends": ["@repo/tsconfig/script/tsconfig"],
+  "include": ["vite.config.ts"]
 }
