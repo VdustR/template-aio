@@ -10,4 +10,4 @@ My all-in-one template for web development.
 
 [MIT](./LICENSE)
 
-Copyright (c) 2024 ViPro <vdustr@gmail.com> (http://vdustr.dev)
+Copyright (c) 2024 ViPro <vdustr@gmail.com> (<http://vdustr.dev>)
