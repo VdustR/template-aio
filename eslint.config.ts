@@ -38,11 +38,19 @@ export default antfu(
     },
   },
   {
-    files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+    files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.mdx"],
     plugins: {
       "simple-import-sort": simpleImportSort,
     },
     rules: {
+      /**
+       * This rule does not integrate well with TSDoc `@link` tags. It's advised to verify its behavior with TypeScript instead.
+       */
+      "@typescript-eslint/no-unused-vars": "off",
+
+      /**
+       * Disable the `import/order` rule in favor of `simple-import-sort`.
+       */
       "import/order": "off",
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
