@@ -22,6 +22,18 @@ export default antfu(
       "plugin:@typescript-eslint/strict",
       "plugin:prettier/recommended",
     ],
+    rules: {
+      /**
+       * This rule does not integrate well with TSDoc `@link` tags. It's advised
+       * to verify its behavior with TypeScript instead.
+       */
+      "@typescript-eslint/no-unused-vars": "off",
+
+      /**
+       * Disable the `import/order` rule in favor of `simple-import-sort`.
+       */
+      "import/order": "off",
+    },
   }),
   {
     ...jsdoc.configs["flat/recommended"],
@@ -43,15 +55,6 @@ export default antfu(
       "simple-import-sort": simpleImportSort,
     },
     rules: {
-      /**
-       * This rule does not integrate well with TSDoc `@link` tags. It's advised to verify its behavior with TypeScript instead.
-       */
-      "@typescript-eslint/no-unused-vars": "off",
-
-      /**
-       * Disable the `import/order` rule in favor of `simple-import-sort`.
-       */
-      "import/order": "off",
       "simple-import-sort/imports": "error",
       "simple-import-sort/exports": "error",
     },
