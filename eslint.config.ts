@@ -30,8 +30,10 @@ export default antfu(
       "@typescript-eslint/no-unused-vars": "off",
 
       /**
-       * Disable the `import/order` rule in favor of `simple-import-sort`.
+       * Disable the `sort-imports` and `import/order` rule in favor of
+       * `simple-import-sort`.
        */
+      "sort-imports": "off",
       "import/order": "off",
     },
   }),
