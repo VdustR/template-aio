@@ -1,10 +1,8 @@
 import antfu from "@antfu/eslint-config";
 import { FlatCompat } from "@eslint/eslintrc";
-import jsdoc from "eslint-plugin-jsdoc";
 import * as mdx from "eslint-plugin-mdx";
 // @ts-expect-error -- no types
 import simpleImportSort from "eslint-plugin-simple-import-sort";
-import tsdoc from "eslint-plugin-tsdoc";
 
 const compat = new FlatCompat();
 
@@ -24,7 +22,7 @@ export default antfu(
     ],
     rules: {
       /**
-       * This rule does not integrate well with TSDoc `@link` tags. It's advised
+       * This rule does not integrate well with JSDoc `@link` tags. It's advised
        * to verify its behavior with TypeScript instead.
        */
       "@typescript-eslint/no-unused-vars": "off",
@@ -37,20 +35,6 @@ export default antfu(
       "import/order": "off",
     },
   }),
-  {
-    ...jsdoc.configs["flat/recommended"],
-    plugins: {},
-    files: ["**/*.cjs", "**/*.js", "**/*.jsx"],
-  },
-  {
-    files: ["**/*.ts", "**/*.tsx"],
-    plugins: {
-      tsdoc,
-    },
-    rules: {
-      "tsdoc/syntax": "warn",
-    },
-  },
   {
     files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.mdx"],
     plugins: {
