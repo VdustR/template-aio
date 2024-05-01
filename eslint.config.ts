@@ -1,10 +1,6 @@
 import antfu from "@antfu/eslint-config";
-import { FlatCompat } from "@eslint/eslintrc";
 import * as mdx from "eslint-plugin-mdx";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
-import tsEslint from "typescript-eslint";
-
-const compat = new FlatCompat();
 
 export default antfu(
   {
@@ -14,22 +10,7 @@ export default antfu(
     yaml: false,
     toml: false,
     markdown: false,
-  },
-  ...compat.config({
-    extends: ["plugin:prettier/recommended"],
     rules: {
-      /**
-       * Inherit strict TypeScript rules from `typescript-eslint`.
-       */
-      ...Object.fromEntries(
-        tsEslint.configs.strict.flatMap((config) => {
-          if (!config.rules) return [];
-          return Object.entries(config.rules).map(([rule, value]) => {
-            const tsRule = rule.replace(/^@typescript-eslint\//, "ts/");
-            return [tsRule, value];
-          });
-        }),
-      ),
       /**
        * This rule does not integrate well with JSDoc `@link` tags. It's advised
        * to verify its behavior with TypeScript instead.
@@ -43,7 +24,7 @@ export default antfu(
       "sort-imports": "off",
       "import/order": "off",
     },
-  }),
+  },
   {
     files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.mdx"],
     plugins: {
