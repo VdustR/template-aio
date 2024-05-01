@@ -6,6 +6,19 @@ My all-in-one template for web development.
 
 [![Open in CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/Vdustr/template-aio)
 
+## Known Issues
+
+### VSCode ESLint Extension Error
+
+When utilizing the ESLint extension in VSCode, you might encounter the following error:
+
+```plaintext
+[Error - 1:23:45 AM] Calculating config file for file:///template-aio/commitlint.config.ts) failed.
+Error: No ESLint configuration found in ...
+```
+
+To resolve this issue, consider switching to the pre-release version of the ESLint extension. You can find more information here: <https://github.com/microsoft/vscode-eslint#version-305---pre-release>
+
 ## License
 
 [MIT](./LICENSE)

@@ -1,7 +1,6 @@
 import antfu from "@antfu/eslint-config";
 import { FlatCompat } from "@eslint/eslintrc";
 import * as mdx from "eslint-plugin-mdx";
-// @ts-expect-error -- no types
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import tsEslint from "typescript-eslint";
 

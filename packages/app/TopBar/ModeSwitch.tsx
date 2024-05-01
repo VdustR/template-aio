@@ -1,7 +1,7 @@
 import { Typography, useColorScheme } from "@mui/joy";
 import Switch from "@mui/joy/Switch";
 import useEventCallback from "@mui/utils/useEventCallback";
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();
@@ -25,14 +25,14 @@ function ModeToggle() {
       slotProps={{
         track: {
           children: (
-            <Fragment>
+            <>
               <Typography component="span" level="inherit" sx={{ ml: "8px" }}>
                 ☀️
               </Typography>
               <Typography component="span" level="inherit" sx={{ mr: "8px" }}>
                 🌙
               </Typography>
-            </Fragment>
+            </>
           ),
         },
       }}
