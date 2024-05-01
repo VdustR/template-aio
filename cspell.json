@@ -4,14 +4,12 @@
   "enableGlobDot": true,
   "files": ["**/*"],
   "ignorePaths": [
-    ".*ignore",
     "**/__snapshots__/**",
+    "**/.env.*.local",
+    "**/.env.local",
     "**/*.svg",
     "/.git",
     "/*.code-workspace",
-    "/packages/app/.env.*.local",
-    "/packages/app/.env.local",
-    "/packages/app/.env.site.*",
     "/pnpm-lock.yaml"
   ],
   "includeRegExpList": ["[ -~]"],
