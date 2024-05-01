@@ -7,7 +7,7 @@ function ModeToggle() {
   const { mode, setMode } = useColorScheme();
   const [mounted, setMounted] = useState(false);
   const checked = mode === "dark";
-  const onChange = useEventCallback(function onChange() {
+  const onChange = useEventCallback(() => {
     setMode(mode === "light" ? "dark" : "light");
   });
 

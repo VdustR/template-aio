@@ -1,6 +1,11 @@
 {
   "name": "@repo/root",
   "type": "module",
+  "packageManager": "pnpm@9.0.6+sha256.0624e30eff866cdeb363b15061bdb7fd9425b17bc1bb42c22f5f4efdea21f6b3",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=9"
+  },
   "scripts": {
     "build": "pnpm run --filter @repo/build build",
     "commit": "cz",
@@ -54,8 +59,6 @@
     "lint-staged": "^15.2.2",
     "postcss-styled-syntax": "^0.6.4",
     "prettier": "^3.2.5",
-    "sort-json": "^2.0.1",
-    "sort-package-json": "^2.10.0",
     "stylelint": "^16.4.0",
     "stylelint-config-idiomatic-order": "^10.0.0",
     "stylelint-config-standard": "^36.0.0",
@@ -63,10 +66,5 @@
     "tsx": "^4.8.1",
     "typescript": "^5.4.5",
     "vite": "^5.2.10"
-  },
-  "packageManager": "pnpm@9.0.6+sha256.0624e30eff866cdeb363b15061bdb7fd9425b17bc1bb42c22f5f4efdea21f6b3",
-  "engines": {
-    "node": ">=22",
-    "pnpm": ">=9"
   }
 }

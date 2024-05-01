@@ -7,12 +7,11 @@ const isFormat = process.env["TYPE"] === "format";
  */
 const config = isFormat
   ? {
-      "**/*.json": "sort-json",
-      "**/package.json": "sort-package-json",
-      "**/*.{cjs,js,jsx,md,mdx,ts,tsx}":
-        "eslint --report-unused-disable-directives --fix --max-warnings=0",
       "**/*.{css,js,jsx,ts,tsx}": "stylelint --fix",
-      "**/*": "prettier --ignore-unknown --write",
+      "**/*": [
+        "eslint --report-unused-disable-directives --fix --max-warnings=0 --no-error-on-unmatched-pattern --no-warn-ignored",
+        "prettier --ignore-unknown --write",
+      ],
     }
   : {
       "**/*": "cspell lint --no-must-find-files",
