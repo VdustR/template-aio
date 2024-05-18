@@ -7,7 +7,9 @@
     "**/__snapshots__/**",
     "**/.env.*.local",
     "**/.env.local",
+    "**/.gitignore",
     "**/*.svg",
+    "/.git",
     "/.git",
     "/*.code-workspace",
     "/pnpm-lock.yaml"
@@ -15,5 +17,5 @@
   "includeRegExpList": ["[ -~]"],
   "useGitignore": true,
   "version": "0.2",
-  "words": ["antfu", "jsdoc", "nums", "nvmrc", "tsdoc", "zustand"]
+  "words": ["antfu", "jsdoc", "nums", "nvmrc", "tsdoc"]
 }

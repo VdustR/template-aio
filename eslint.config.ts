@@ -1,6 +1,9 @@
 import antfu, { jsonc, sortPackageJson } from "@antfu/eslint-config";
+import { FlatCompat } from "@eslint/eslintrc";
 import * as mdx from "eslint-plugin-mdx";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
+
+const compat = new FlatCompat();
 
 export default antfu(
   {
@@ -86,4 +89,16 @@ export default antfu(
   {
     ...mdx.flatCodeBlocks,
   },
+  // Legacy config
+  ...compat.config({
+    overrides: [
+      {
+        files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+        plugins: ["react-compiler"],
+        rules: {
+          "react-compiler/react-compiler": "error",
+        },
+      },
+    ],
+  }),
 );

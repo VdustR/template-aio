@@ -9,7 +9,13 @@ import { Layout } from "./layout";
 const styles = {
   box: {
     ...sxUtils.flexFill,
-    alignItems: "centesr",
+    alignItems: "center",
+  },
+  card: {
+    display: "flex",
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: (theme) => theme.spacing(2),
   },
   title: {
     fontVariantNumeric: "tabular-nums",
@@ -26,9 +32,10 @@ const App: FC = () => {
   return (
     <Layout>
       <Box sx={styles.box}>
-        <Card>
+        <Card sx={styles.card}>
           <Typography level="h2" sx={styles.title}>
-            Count: {count}
+            {"Count: "}
+            {count}
           </Typography>
           <Button onClick={increase}>Increase</Button>
         </Card>

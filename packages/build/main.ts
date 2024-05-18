@@ -1,1 +1,0 @@
-import "@repo/app/main";
