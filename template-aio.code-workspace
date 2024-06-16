@@ -21,7 +21,7 @@
       "source.organizeImports": "never",
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "eslint.rules.customizations": [
       { "rule": "style/*", "severity": "off" },
       { "rule": "format/*", "severity": "off" },
