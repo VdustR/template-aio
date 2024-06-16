@@ -1,7 +1,7 @@
 import { Box, Button, Card, Typography } from "@mui/joy";
 import type { SxProps } from "@mui/joy/styles/types";
 import useEventCallback from "@mui/utils/useEventCallback";
-import { sxUtils } from "@repo/utils/sx";
+import { sxUtils } from "@utils/sx";
 import { type ComponentProps, type FC, useState } from "react";
 
 import { Layout } from "./layout";

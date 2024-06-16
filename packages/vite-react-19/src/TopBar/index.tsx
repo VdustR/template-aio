@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/joy";
 import type { SxProps } from "@mui/joy/styles/types";
-import { sxUtils } from "@repo/utils/sx";
+import { sxUtils } from "@utils/sx";
 
 import { ModeToggle } from "./ModeSwitch";
 

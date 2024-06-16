@@ -1,6 +1,6 @@
 import { Box, Container } from "@mui/joy";
 import type { SxProps } from "@mui/joy/styles/types";
-import { sxUtils } from "@repo/utils/sx";
+import { sxUtils } from "@utils/sx";
 import type { ReactNode } from "react";
 
 import { TopBar } from "./TopBar";
