@@ -33,7 +33,6 @@
       { "rule": "*-newline", "severity": "off" },
       { "rule": "*quotes", "severity": "off" },
       { "rule": "*semi", "severity": "off" },
-      { "rule": "prettier/prettier", "severity": "off" },
       { "rule": "simple-import-sort/*", "severity": "off" },
     ],
     "eslint.useFlatConfig": true,

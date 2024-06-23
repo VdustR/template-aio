@@ -1,9 +1,8 @@
 import antfu, { jsonc, sortPackageJson } from "@antfu/eslint-config";
-import { FlatCompat } from "@eslint/eslintrc";
 import * as mdx from "eslint-plugin-mdx";
+// @ts-expect-error -- no types
+import reactCompiler from "eslint-plugin-react-compiler";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
-
-const compat = new FlatCompat();
 
 export default antfu(
   {
@@ -60,7 +59,9 @@ export default antfu(
       })(),
     );
   })(),
-  (async function sortCodeWorkspace() {
+
+  // Sort keys in JSON files without `.json` extension.
+  (async function jsonSortKeys() {
     return await jsonc({
       files: ["**/*.code-workspace"],
       overrides: {
@@ -69,6 +70,8 @@ export default antfu(
       stylistic: false,
     });
   })(),
+
+  // Simple import sort
   {
     files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.mdx"],
     plugins: {
@@ -79,6 +82,19 @@ export default antfu(
       "simple-import-sort/exports": "error",
     },
   },
+
+  // React compiler
+  {
+    files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
+    plugins: {
+      "react-compiler": reactCompiler,
+    },
+    rules: {
+      "react-compiler/react-compiler": "error",
+    },
+  },
+
+  // MDX
   {
     ...mdx.flat,
     processor: mdx.createRemarkProcessor({
@@ -89,16 +105,4 @@ export default antfu(
   {
     ...mdx.flatCodeBlocks,
   },
-  // Legacy config
-  ...compat.config({
-    overrides: [
-      {
-        files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
-        plugins: ["react-compiler"],
-        rules: {
-          "react-compiler/react-compiler": "error",
-        },
-      },
-    ],
-  }),
 );
