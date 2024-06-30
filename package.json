@@ -17,6 +17,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@repo/dts": "workspace:*",
     "@repo/tsconfig": "workspace:*",
     "@repo/utils": "workspace:*",
     "babel-plugin-react-compiler": "0.0.0-experimental-592953e-20240517",

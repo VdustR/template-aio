@@ -12,6 +12,9 @@ importers:
 
   .:
     dependencies:
+      '@repo/dts':
+        specifier: workspace:*
+        version: link:packages/dts
       '@repo/tsconfig':
         specifier: workspace:*
         version: link:packages/tsconfig
@@ -120,6 +123,8 @@ importers:
         version: 5.5.2
 
   packages/css-reset: {}
+
+  packages/dts: {}
 
   packages/tsconfig: {}
 
