@@ -15,7 +15,8 @@ const config = isFormat
     }
   : {
       "**/*": "cspell lint --no-must-find-files",
-      "packages/app/**/*.{ts,tsx}": () => "pnpm exec tsc -p packages/app",
+      "packages/vite-react-19/src/**/*.{ts,tsx}": () =>
+        "pnpm exec tsc -p packages/vite-react-19/src",
     };
 
 export default config;
