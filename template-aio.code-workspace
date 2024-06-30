@@ -57,13 +57,7 @@
     "search.useParentIgnoreFiles": true,
     "stylelint.packageManager": "pnpm",
     "stylelint.stylelintPath": "node_modules/stylelint",
-    "stylelint.validate": [
-      "css",
-      "javascript",
-      "javascriptreact",
-      "typescript",
-      "typescriptreact",
-    ],
+    "stylelint.validate": ["css"],
     "typescript.tsdk": "root/node_modules/typescript/lib",
   },
 }

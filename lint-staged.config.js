@@ -7,7 +7,7 @@ const isFormat = process.env["TYPE"] === "format";
  */
 const config = isFormat
   ? {
-      "**/*.{css,js,jsx,ts,tsx}": "stylelint --fix",
+      "**/*.css": "stylelint --fix",
       "**/*": [
         "eslint --report-unused-disable-directives --fix --max-warnings=0 --no-error-on-unmatched-pattern --no-warn-ignored",
         "prettier --ignore-unknown --write",
