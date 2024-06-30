@@ -21,6 +21,7 @@
     "@repo/tsconfig": "workspace:*",
     "@repo/utils": "workspace:*",
     "babel-plugin-react-compiler": "0.0.0-experimental-592953e-20240517",
+    "remeda": "^2.2.1",
     "vite": "^5.3.1"
   },
   "devDependencies": {
@@ -29,6 +30,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@commitlint/types": "^19.0.3",
     "@eslint-react/eslint-plugin": "^1.5.16",
+    "@repo/eslint": "workspace:^",
     "@total-typescript/ts-reset": "^0.5.1",
     "@types/eslint": "^8.56.10",
     "@types/eslint__eslintrc": "^2.1.1",

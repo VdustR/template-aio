@@ -10,6 +10,7 @@
     { "name": "root", "path": "." },
     { "path": "packages/css-reset" },
     { "path": "packages/dts" },
+    { "path": "packages/eslint" },
     { "path": "packages/tsconfig" },
     { "path": "packages/utils" },
     { "path": "packages/vite-react-19" },

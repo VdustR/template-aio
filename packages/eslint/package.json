@@ -1,0 +1,5 @@
+{
+  "name": "@repo/eslint",
+  "private": true,
+  "description": "Shared ESLint configuration"
+}
