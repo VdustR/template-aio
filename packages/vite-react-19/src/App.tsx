@@ -11,16 +11,16 @@ const styles = {
     ...sxUtils.flexFill,
     alignItems: "center",
   },
-  card: {
+  card: (theme) => ({
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
-    gap: (theme) => theme.spacing(2),
-  },
+    gap: theme.spacing(2),
+  }),
   title: {
     fontVariantNumeric: "tabular-nums",
   },
-} satisfies Record<string, SxProps>;
+} satisfies Record<PropertyKey, SxProps>;
 
 const App: FC = () => {
   const [count, setCount] = useState(0);

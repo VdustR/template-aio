@@ -119,6 +119,8 @@ importers:
         specifier: ^5.5.2
         version: 5.5.2
 
+  packages/css-reset: {}
+
   packages/tsconfig: {}
 
   packages/utils: {}
@@ -134,6 +136,9 @@ importers:
       '@mui/joy':
         specifier: 5.0.0-beta.44
         version: 5.0.0-beta.44(@emotion/react@11.11.4(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1))(@emotion/styled@11.11.5(@emotion/react@11.11.4(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1))(react-dom@19.0.0-rc-fb9a90fa48-20240614(react@19.0.0-rc-fb9a90fa48-20240614))(react@19.0.0-rc-fb9a90fa48-20240614)(types-react@19.0.0-rc.1)
+      '@repo/css-reset':
+        specifier: workspace:*
+        version: link:../css-reset
       react:
         specifier: 19.0.0-rc-fb9a90fa48-20240614
         version: 19.0.0-rc-fb9a90fa48-20240614

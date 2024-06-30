@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.11.5",
     "@fontsource/inter": "^5.0.18",
     "@mui/joy": "5.0.0-beta.44",
+    "@repo/css-reset": "workspace:*",
     "react": "19.0.0-rc-fb9a90fa48-20240614",
     "react-dom": "19.0.0-rc-fb9a90fa48-20240614",
     "vitest": "^1.5.3"

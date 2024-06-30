@@ -1,6 +1,6 @@
 html,
 body,
-#root {
+.my-app {
   position: relative;
   display: flex;
   height: 100%;

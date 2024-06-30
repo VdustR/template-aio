@@ -12,6 +12,7 @@ const flexInherit = {
 const flexFill = {
   ...flexInherit,
   flex: 1,
+  alignSelf: "stretch",
 } satisfies SxProps;
 
 const noWrap = {
@@ -24,6 +25,6 @@ const sxUtils = {
   flexInherit,
   flexFill,
   noWrap,
-} satisfies Record<string, SxProps>;
+} satisfies Record<PropertyKey, SxProps>;
 
 export { sxUtils };

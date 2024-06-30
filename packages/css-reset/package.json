@@ -1,0 +1,5 @@
+{
+  "name": "@repo/css-reset",
+  "private": true,
+  "main": "main.css"
+}
