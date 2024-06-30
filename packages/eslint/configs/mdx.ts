@@ -1,6 +1,6 @@
 import * as mdxPlugin from "eslint-plugin-mdx";
 
-import type { Config } from "./types";
+import type { Config } from "../types";
 
 const mdx: Array<Config> = [
   {

@@ -20,8 +20,9 @@
     "@repo/dts": "workspace:*",
     "@repo/tsconfig": "workspace:*",
     "@repo/utils": "workspace:*",
+    "@types/lodash": "^4.17.6",
     "babel-plugin-react-compiler": "0.0.0-experimental-592953e-20240517",
-    "remeda": "^2.2.1",
+    "lodash": "^4.17.21",
     "vite": "^5.3.1"
   },
   "devDependencies": {
@@ -47,6 +48,7 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "eslint-plugin-simple-import-sort": "^12.1.0",
     "eslint-ts-patch": "8.57.0-0",
+    "fast-glob": "^3.3.2",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "postcss-styled-syntax": "^0.6.4",

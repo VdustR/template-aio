@@ -2,9 +2,9 @@ import {
   type Rules,
   sortPackageJson as originalSortPackageJson,
 } from "@antfu/eslint-config";
-import * as R from "remeda";
+import get from "lodash/get";
 
-import type { Config } from "./types";
+import type { Config } from "../types";
 
 /**
  * Similar to `sortPackageJson` from `@antfu/eslint-config`, but sorts keys with
@@ -14,10 +14,9 @@ const sortPackageJson: () => Config = async () => {
   const sortPackageJsonConfigs = await originalSortPackageJson();
   const sortPackageJsonConfig = sortPackageJsonConfigs[0];
   if (!sortPackageJsonConfig) throw new Error("No sortPackageJsonConfig");
-  const ruleEntry: Extract<Rules["jsonc/sort-keys"], Array<any>> = R.pathOr(
+  const ruleEntry: Extract<Rules["jsonc/sort-keys"], Array<any>> = get(
     sortPackageJsonConfig,
     ["rules", "jsonc/sort-keys"],
-    undefined,
   );
   if (!ruleEntry) throw new Error("No ruleEntry");
   return {

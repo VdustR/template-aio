@@ -1,6 +1,6 @@
 import simpleImportSortPlugin from "eslint-plugin-simple-import-sort";
 
-import type { Config } from "./types";
+import type { Config } from "../types";
 
 const simpleImportSort: Config = {
   files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.mdx"],

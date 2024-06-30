@@ -13,6 +13,11 @@ const rules: NonNullable<TypedFlatConfigItem["rules"]> = {
   "ts/no-unused-vars": "off",
 
   /**
+   * Conflicts with TypeScript's `noPropertyAccessFromIndexSignature` rule.
+   */
+  "dot-notation": "off",
+
+  /**
    * Disable the `sort-imports` and `import/order` rule in favor of
    * `simple-import-sort`.
    */

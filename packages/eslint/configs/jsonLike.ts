@@ -1,6 +1,6 @@
 import { jsonc } from "@antfu/eslint-config";
 
-import type { Config } from "./types";
+import type { Config } from "../types";
 
 /**
  * Format JSON-like files which do not have `.json` extension.
