@@ -15,12 +15,11 @@
   ],
   "settings": {
     "css.validate": false,
-    "editor.codeActionsOnSave": {
-      "source.fixAll": "never",
-      "source.fixAll.eslint": "explicit",
-      "source.fixAll.stylelint": "explicit",
-      "source.organizeImports": "never",
-    },
+    "editor.codeActionsOnSave": [
+      "source.organizeImports",
+      "source.fixAll.eslint",
+      "source.fixAll.stylelint",
+    ],
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "eslint.rules.customizations": [
