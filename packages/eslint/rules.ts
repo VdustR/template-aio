@@ -2,6 +2,11 @@ import type { TypedFlatConfigItem } from "@antfu/eslint-config";
 
 const rules: NonNullable<TypedFlatConfigItem["rules"]> = {
   /**
+   * Unified brace style.
+   */
+  curly: ["error", "multi-or-nest", "consistent"],
+
+  /**
    * Sort keys in JSON files.
    */
   "jsonc/sort-keys": "error",

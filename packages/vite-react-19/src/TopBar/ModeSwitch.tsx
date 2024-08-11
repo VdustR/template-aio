@@ -14,9 +14,7 @@ function ModeToggle() {
   useEffect(() => {
     setMounted(true);
   }, []);
-  if (!mounted) {
-    return null;
-  }
+  if (!mounted) return null;
 
   return (
     <Switch

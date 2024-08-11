@@ -15,9 +15,7 @@ const appPkgs = ["packages/vite-react-19"];
 
 // Make sure appPkgs are valid
 appPkgs.forEach((pkg) => {
-  if (!pkgs.includes(pkg)) {
-    throw new Error(`"${pkg}" is not a valid package`);
-  }
+  if (!pkgs.includes(pkg)) throw new Error(`"${pkg}" is not a valid package`);
 });
 
 /**

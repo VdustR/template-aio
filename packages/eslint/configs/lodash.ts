@@ -16,9 +16,9 @@ const lodash: Config = {
               ImportDeclaration: (node) => {
                 if (node.source.value === "lodash") {
                   const imports = node.specifiers.flatMap((specifier) => {
-                    if (specifier.type === "ImportSpecifier") {
+                    if (specifier.type === "ImportSpecifier")
                       return specifier.imported.name;
-                    }
+
                     return [];
                   });
                   context.report({
@@ -40,9 +40,9 @@ const lodash: Config = {
                 }
                 if (node.source.value === "lodash/fp") {
                   const imports = node.specifiers.flatMap((specifier) => {
-                    if (specifier.type === "ImportSpecifier") {
+                    if (specifier.type === "ImportSpecifier")
                       return specifier.imported.name;
-                    }
+
                     return [];
                   });
                   context.report({
