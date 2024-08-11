@@ -18,6 +18,15 @@ const rules: NonNullable<TypedFlatConfigItem["rules"]> = {
   "unused-imports/no-unused-imports": "off",
 
   /**
+   * Namespaces are useful for centralizing the management of types. Just avoid
+   * overusing them with runtime code.
+   *
+   * - References:
+   *   - <https://x.com/mattpocockuk/status/1805606072167940167>
+   */
+  "ts/no-namespace": "off",
+
+  /**
    * Conflicts with TypeScript's `noPropertyAccessFromIndexSignature` rule.
    */
   "dot-notation": "off",
