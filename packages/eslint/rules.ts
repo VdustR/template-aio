@@ -10,7 +10,12 @@ const rules: NonNullable<TypedFlatConfigItem["rules"]> = {
    * This rule does not integrate well with JSDoc `@link` tags. It's advised
    * to verify its behavior with TypeScript instead.
    */
+  "no-unused-vars": "off",
   "ts/no-unused-vars": "off",
+  "unused-imports/no-unused-vars": "off",
+  "unused-imports/no-unused-imports-ts": "off",
+  "unused-imports/no-unused-vars-ts": "off",
+  "unused-imports/no-unused-imports": "off",
 
   /**
    * Conflicts with TypeScript's `noPropertyAccessFromIndexSignature` rule.
