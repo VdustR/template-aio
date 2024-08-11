@@ -42,6 +42,11 @@ const rules: NonNullable<TypedFlatConfigItem["rules"]> = {
    */
   "sort-imports": "off",
   "import/order": "off",
+
+  /**
+   * Forbid `import {} from "module"`.
+   */
+  "import/no-empty-named-blocks": "error",
 };
 
 export { rules };
