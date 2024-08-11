@@ -5,6 +5,7 @@ import merge from "lodash/merge";
 import { jsonLike } from "./configs/jsonLike";
 import { lodash } from "./configs/lodash";
 import { mdx } from "./configs/mdx";
+import { prettier } from "./configs/prettier";
 import { reactCompiler } from "./configs/reactCompiler";
 import { simpleImportSort } from "./configs/simpleImportSort";
 import { sortPackageJson } from "./configs/sortPackageJson";
@@ -32,6 +33,7 @@ const vdustr: typeof antfu = (
     simpleImportSort,
     ...(!reactEnabled ? [] : [reactCompiler]),
     ...(!markdownEnabled ? [] : mdx),
+    prettier,
   ];
   return antfu(
     merge({}, defaultOptions, options),
