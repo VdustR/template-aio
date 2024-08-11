@@ -49,6 +49,9 @@ importers:
       '@eslint-react/eslint-plugin':
         specifier: ^1.5.16
         version: 1.5.16(eslint-ts-patch@8.57.0-0)(typescript@5.5.2)
+      '@eslint/compat':
+        specifier: ^1.1.1
+        version: 1.1.1
       '@repo/eslint':
         specifier: workspace:^
         version: link:packages/eslint
@@ -109,6 +112,9 @@ importers:
       lint-staged:
         specifier: ^15.2.7
         version: 15.2.7
+      pathe:
+        specifier: ^1.1.2
+        version: 1.1.2
       postcss-styled-syntax:
         specifier: ^0.6.4
         version: 0.6.4(postcss@8.4.33)
@@ -980,6 +986,10 @@ packages:
 
   '@eslint-react/var@1.5.16':
     resolution: {integrity: sha512-XTBQ329WViUCxaDxKTrNR3tMb9wYJatQiyNtMB7bAieDG50o9yO0npFse7T1U4ZDX2kaXA7plkeM0euWTriLVQ==}
+
+  '@eslint/compat@1.1.1':
+    resolution: {integrity: sha512-lpHyRyplhGPL5mGEh6M9O5nnKk0Gz4bFI+Zu6tKlPpDUN7XshWvH9C/px4UVm87IAANE0W81CEsNGbS1KlzXpA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/eslintrc@2.1.4':
     resolution: {integrity: sha512-269Z39MS6wVJtsoUl10L60WdkhJVdPG24Q4eZTH3nnF6lpvSShEK3wQjDX9JRWAUPvPh7COouPpU9IrqaZFvtQ==}
@@ -5627,6 +5637,8 @@ snapshots:
       - eslint
       - supports-color
       - typescript
+
+  '@eslint/compat@1.1.1': {}
 
   '@eslint/eslintrc@2.1.4':
     dependencies:
