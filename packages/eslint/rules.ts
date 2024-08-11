@@ -2,6 +2,11 @@ import type { TypedFlatConfigItem } from "@antfu/eslint-config";
 
 const rules: NonNullable<TypedFlatConfigItem["rules"]> = {
   /**
+   * Some callbacks are purposefully named to make the code self-documenting.
+   */
+  "prefer-arrow-callback": "off",
+
+  /**
    * Sort keys in JSON files.
    */
   "jsonc/sort-keys": "error",

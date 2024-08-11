@@ -11,8 +11,11 @@ function ModeToggle() {
     setMode(mode === "light" ? "dark" : "light");
   });
 
-  useEffect(() => {
+  useEffect(function bindMounted() {
     setMounted(true);
+    return function cleanup() {
+      setMounted(false);
+    };
   }, []);
   if (!mounted) return null;
 
