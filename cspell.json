@@ -10,7 +10,6 @@
     "**/.gitignore",
     "**/*.svg",
     "/.git",
-    "/.git",
     "/*.code-workspace",
     "/pnpm-lock.yaml"
   ],
