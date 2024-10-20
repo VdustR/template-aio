@@ -1,7 +1,7 @@
-// @ts-expect-error -- no types
-import reactCompilerPlugin from "eslint-plugin-react-compiler";
-
 import type { Config } from "../types";
+
+// @ts-expect-error -- no types
+import * as reactCompilerPlugin from "eslint-plugin-react-compiler";
 
 const reactCompiler: Config = {
   files: ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],

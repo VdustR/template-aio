@@ -17,10 +17,16 @@ body,
   overflow-wrap: anywhere;
   white-space: pre-wrap;
   word-break: normal;
-  word-break: auto-phrase;
 }
 
 * {
   min-width: 0;
   min-height: 0;
+}
+
+img {
+  /**
+   * Prevent image distortion.
+   */
+  object-fit: contain;
 }

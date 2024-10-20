@@ -25,7 +25,7 @@ const config = isFormat
   ? {
       "**/*.css": "stylelint --fix",
       "**/*": [
-        "eslint --report-unused-disable-directives --fix --max-warnings=0 --no-error-on-unmatched-pattern --no-warn-ignored",
+        "eslint --report-unused-disable-directives --fix --max-warnings=0 --no-error-on-unmatched-pattern --no-warn-ignored --flag unstable_ts_config",
         "prettier --ignore-unknown --write",
       ],
     }
