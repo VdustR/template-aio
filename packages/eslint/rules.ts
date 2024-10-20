@@ -37,13 +37,6 @@ const rules: NonNullable<TypedFlatConfigItem["rules"]> = {
   "dot-notation": "off",
 
   /**
-   * Disable the `sort-imports` and `import/order` rule in favor of
-   * `simple-import-sort`.
-   */
-  "sort-imports": "off",
-  "import/order": "off",
-
-  /**
    * Forbid `import {} from "module"`.
    */
   "import/no-empty-named-blocks": "error",

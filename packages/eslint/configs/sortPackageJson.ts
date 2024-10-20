@@ -1,10 +1,7 @@
-import {
-  type Rules,
-  sortPackageJson as originalSortPackageJson,
-} from "@antfu/eslint-config";
-import get from "lodash/get";
-
 import type { Config } from "../types";
+import { sortPackageJson as originalSortPackageJson } from "@antfu/eslint-config";
+
+import get from "lodash/get";
 
 /**
  * Similar to `sortPackageJson` from `@antfu/eslint-config`, but sorts keys with
@@ -14,17 +11,15 @@ const sortPackageJson: () => Config = async () => {
   const sortPackageJsonConfigs = await originalSortPackageJson();
   const sortPackageJsonConfig = sortPackageJsonConfigs[0];
   if (!sortPackageJsonConfig) throw new Error("No sortPackageJsonConfig");
-  const ruleEntry: Extract<Rules["jsonc/sort-keys"], Array<any>> = get(
-    sortPackageJsonConfig,
-    ["rules", "jsonc/sort-keys"],
-  );
+  const ruleEntry = get(sortPackageJsonConfig, ["rules", "jsonc/sort-keys"]);
   if (!ruleEntry) throw new Error("No ruleEntry");
+  const rules = Array.isArray(ruleEntry) ? ruleEntry : [ruleEntry];
   return {
     ...sortPackageJsonConfig,
     name: "sort-package-json",
     rules: {
       "jsonc/sort-keys": [
-        ...ruleEntry,
+        ...rules,
         /**
          * Sort keys with default order if no specific order is provided.
          */
