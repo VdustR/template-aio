@@ -20,8 +20,10 @@
     "@repo/dts": "workspace:*",
     "@repo/tsconfig": "workspace:*",
     "@repo/utils": "workspace:*",
+    "@types/fs-extra": "^11.0.4",
     "@types/lodash": "^4.17.13",
     "babel-plugin-react-compiler": "19.0.0-beta-9ee70a1-20241017",
+    "fs-extra": "^11.2.0",
     "lodash": "^4.17.21",
     "vite": "^6.0.3"
   },
