@@ -5,7 +5,7 @@ import App from "./App";
 import { Theme } from "./theme";
 
 import "@fontsource/inter/index.css";
-import "@repo/css-reset/index.css";
+import "@repo/css-reset/main.css";
 
 const container = document.createElement("div");
 container.setAttribute("class", "my-app");
