@@ -11,6 +11,7 @@
     "**/*.svg",
     "/.git",
     "/.prettierignore",
+    "/.stylelintignore",
     "/*.code-workspace",
     "/pnpm-lock.yaml"
   ],
