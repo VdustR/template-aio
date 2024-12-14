@@ -1,6 +1,8 @@
 import process from "node:process";
 
 import glob from "fast-glob";
+import fs from "fs-extra";
+import path from "pathe";
 
 const isFormat = process.env["TYPE"] === "format";
 
@@ -11,12 +13,11 @@ const pkgs = glob.sync("packages/*", {
   onlyDirectories: true,
 });
 
-const appPkgs = ["packages/vite-react-19"];
-
-// Make sure appPkgs are valid
-appPkgs.forEach((pkg) => {
-  if (!pkgs.includes(pkg)) throw new Error(`"${pkg}" is not a valid package`);
-});
+/**
+ * Packages containing a `src` directory. Each package should have its own
+ * tsconfig.json file located within the `src` directory.
+ */
+const withSrcPkgs = pkgs.filter((pkg) => fs.existsSync(path.join(pkg, "src")));
 
 /**
  * @type {import('lint-staged').Config}
@@ -33,7 +34,7 @@ const config = isFormat
       "**/*": "cspell lint --no-must-find-files",
       ...Object.fromEntries(
         pkgs.flatMap((pkg) => {
-          if (appPkgs.includes(pkg)) {
+          if (withSrcPkgs.includes(pkg)) {
             return [
               [`${pkg}/*.config.{js,ts}`, () => `pnpm exec tsc -p ${pkg}`],
               [
