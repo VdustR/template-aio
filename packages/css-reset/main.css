@@ -10,9 +10,7 @@ body,
   justify-content: stretch;
 }
 
-html,
-body,
-:host {
+.my-app {
   hyphens: auto;
   overflow-wrap: anywhere;
   white-space: pre-wrap;
