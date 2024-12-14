@@ -4,8 +4,8 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import { Theme } from "./theme";
 
-import "@fontsource/inter";
-import "@repo/css-reset";
+import "@fontsource/inter/index.css";
+import "@repo/css-reset/index.css";
 
 const container = document.createElement("div");
 container.setAttribute("class", "my-app");
