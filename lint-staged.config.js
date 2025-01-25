@@ -20,13 +20,13 @@ const pkgs = glob.sync("packages/*", {
 const withSrcPkgs = pkgs.filter((pkg) => fs.existsSync(path.join(pkg, "src")));
 
 /**
- * @type {import('lint-staged').Config}
+ * @type {import('lint-staged').Configuration}
  */
 const config = isFormat
   ? {
       "**/*.css": "stylelint --fix",
       "**/*": [
-        "eslint --report-unused-disable-directives --fix --max-warnings=0 --no-error-on-unmatched-pattern --no-warn-ignored --flag unstable_ts_config",
+        "eslint --report-unused-disable-directives --fix --max-warnings=0 --no-error-on-unmatched-pattern --no-warn-ignored",
         "prettier --ignore-unknown --write",
       ],
     }
