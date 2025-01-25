@@ -7,11 +7,6 @@ const rules: NonNullable<TypedFlatConfigItem["rules"]> = {
   "prefer-arrow-callback": "off",
 
   /**
-   * Sort keys in JSON files.
-   */
-  "jsonc/sort-keys": "error",
-
-  /**
    * This rule does not integrate well with JSDoc `@link` tags. It's advised
    * to verify its behavior with TypeScript instead.
    */

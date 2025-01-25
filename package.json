@@ -1,11 +1,8 @@
 {
   "name": "@repo/root",
+  "version": "0.0.0",
+  "private": true,
   "type": "module",
-  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c",
-  "engines": {
-    "node": ">=18",
-    "pnpm": ">=8"
-  },
   "scripts": {
     "build": "pnpm run --filter vite-react-19 build --outDir ../../dist",
     "commit": "cz",
@@ -47,6 +44,7 @@
     "eslint": "^9.19.0",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-mdx": "^3.1.5",
+    "eslint-plugin-package-json": "^0.21.1",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-compiler": "19.0.0-beta-decd7b8-20250118",
     "eslint-plugin-react-hooks": "^5.1.0",
@@ -65,5 +63,10 @@
     "stylelint-prettier": "^5.0.2",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3"
+  },
+  "packageManager": "pnpm@9.15.0+sha512.76e2379760a4328ec4415815bcd6628dee727af3779aaa4c914e3944156c4299921a89f976381ee107d41f12cfa4b66681ca9c718f0668fa0831ed4c6d8ba56c",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=8"
   }
 }
