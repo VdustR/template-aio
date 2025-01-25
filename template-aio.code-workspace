@@ -27,6 +27,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "eslint.rules.customizations": [
+      { "fixable": true, "rule": "perfectionist/*", "severity": "off" },
       { "fixable": true, "rule": "style/*", "severity": "off" },
       { "fixable": true, "rule": "format/*", "severity": "off" },
       { "fixable": true, "rule": "*-indent", "severity": "off" },

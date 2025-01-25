@@ -1,7 +1,7 @@
 import type { Config } from "../types";
 import { sortPackageJson as originalSortPackageJson } from "@antfu/eslint-config";
 
-import get from "lodash/get";
+import { get } from "es-toolkit/compat";
 
 /**
  * Similar to `sortPackageJson` from `@antfu/eslint-config`, but sorts keys with

@@ -1,5 +1,8 @@
 {
   "name": "@repo/eslint",
   "private": true,
-  "description": "Shared ESLint configuration"
+  "description": "Shared ESLint configuration",
+  "dependencies": {
+    "es-toolkit": "catalog:"
+  }
 }

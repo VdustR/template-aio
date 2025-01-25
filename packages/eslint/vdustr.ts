@@ -2,9 +2,8 @@ import type { Config } from "./types";
 import antfu from "@antfu/eslint-config";
 import { rules } from "@repo/eslint/rules";
 
-import merge from "lodash/merge";
+import { merge } from "es-toolkit/compat";
 import { jsonLike } from "./configs/jsonLike";
-import { lodash } from "./configs/lodash";
 import { mdx } from "./configs/mdx";
 import { prettier } from "./configs/prettier";
 import { reactCompiler } from "./configs/reactCompiler";
@@ -26,7 +25,6 @@ const vdustr: typeof antfu = (
     rules,
   };
   const defaultConfigs: Array<NonNullable<Parameters<typeof antfu>[1]>> = [
-    lodash,
     sortPackageJson(),
     jsonLike(),
     ...(!reactEnabled ? [] : [reactCompiler]),

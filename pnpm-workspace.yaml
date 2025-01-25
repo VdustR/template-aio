@@ -1,2 +1,5 @@
 packages:
   - "packages/*"
+
+catalog:
+  es-toolkit: ^1.31.0
