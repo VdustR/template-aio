@@ -22,10 +22,8 @@
     "@repo/tsconfig": "workspace:*",
     "@repo/utils": "workspace:*",
     "@types/fs-extra": "^11.0.4",
-    "@types/lodash": "^4.17.14",
     "babel-plugin-react-compiler": "19.0.0-beta-decd7b8-20250118",
     "fs-extra": "^11.3.0",
-    "lodash": "^4.17.21",
     "npm-run-all": "^4.1.5",
     "vite": "^6.0.11"
   },
