@@ -1,8 +1,9 @@
 import type { SxProps } from "@mui/joy/styles/types";
+import type { ComponentProps, FC } from "react";
 import { Box, Button, Card, Typography } from "@mui/joy";
 import useEventCallback from "@mui/utils/useEventCallback";
 import { sxUtils } from "@utils/sx";
-import { type ComponentProps, type FC, useState } from "react";
+import { useState } from "react";
 
 import { Layout } from "./layout";
 
@@ -44,4 +45,4 @@ const App: FC = () => {
   );
 };
 
-export default App;
+export { App };

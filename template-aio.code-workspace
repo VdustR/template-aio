@@ -11,7 +11,6 @@
     { "name": "root", "path": "." },
     { "path": "packages/css-reset" },
     { "path": "packages/dts" },
-    { "path": "packages/eslint" },
     { "path": "packages/tsconfig" },
     { "path": "packages/utils" },
     { "path": "packages/vite-react-19" },
@@ -19,11 +18,9 @@
   "settings": {
     "css.validate": false,
     "editor.codeActionsOnSave": [
-      "source.addMissingImports.ts",
-      "source.organizeImports",
-      "source.formatDocument",
       "source.fixAll.eslint",
       "source.fixAll.stylelint",
+      "source.formatDocument",
     ],
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
