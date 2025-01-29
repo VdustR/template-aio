@@ -4,7 +4,7 @@ import glob from "fast-glob";
 import fs from "fs-extra";
 import path from "pathe";
 
-const isFormat = process.env["TYPE"] === "format";
+const isFormat = process.env.TYPE === "format";
 
 const typescriptExtensions = ["js", "jsx", "ts", "tsx"];
 
