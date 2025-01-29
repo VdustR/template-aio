@@ -18,6 +18,7 @@
   "settings": {
     "css.validate": false,
     "editor.codeActionsOnSave": [
+      "source.removeUnusedImports",
       "source.fixAll.eslint",
       "source.fixAll.stylelint",
       "source.formatDocument",
@@ -60,6 +61,7 @@
       "scss",
       "pcss",
       "postcss",
+      "mdx",
     ],
     "less.validate": false,
     "scss.validate": false,
