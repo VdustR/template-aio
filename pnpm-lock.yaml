@@ -62,7 +62,7 @@ importers:
         version: 4.3.4(vite@6.2.0(@types/node@22.13.8)(jiti@2.4.2)(tsx@4.19.3)(yaml@2.7.0))
       '@vp-tw/eslint-config':
         specifier: ^0.0.26
-        version: 0.0.26(@antfu/eslint-config@4.3.0(@eslint-react/eslint-plugin@1.29.0(eslint@9.21.0(jiti@2.4.2))(ts-api-utils@2.0.1(typescript@5.8.2))(typescript@5.8.2))(@typescript-eslint/utils@8.25.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2))(@vue/compiler-sfc@3.4.30)(eslint-plugin-react-hooks@5.1.0(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-react-refresh@0.4.18(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.8)(jiti@2.4.2)(tsx@4.19.3)(yaml@2.7.0)))(@types/eslint-config-prettier@6.11.3)(@types/react@19.0.10)(eslint-plugin-mdx@3.1.5(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-package-json@0.26.0(@types/estree@1.0.6)(eslint@9.21.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0))(eslint-plugin-react-compiler@19.0.0-beta-e1e972c-20250221(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))
+        version: 0.0.26(@antfu/eslint-config@4.3.0(@eslint-react/eslint-plugin@1.29.0(eslint@9.21.0(jiti@2.4.2))(ts-api-utils@2.0.1(typescript@5.8.2))(typescript@5.8.2))(@typescript-eslint/utils@8.25.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2))(@vue/compiler-sfc@3.4.30)(eslint-plugin-react-hooks@5.1.0(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-react-refresh@0.4.18(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.8)(jiti@2.4.2)(tsx@4.19.3)(yaml@2.7.0)))(@types/eslint-config-prettier@6.11.3)(@types/react@19.0.10)(eslint-config-prettier@10.0.2(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-mdx@3.1.5(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-package-json@0.26.0(@types/estree@1.0.6)(eslint@9.21.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0))(eslint-plugin-react-compiler@19.0.0-beta-e1e972c-20250221(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))
       '@vp-tw/tsconfig':
         specifier: ^3.0.0
         version: 3.0.0
@@ -75,6 +75,9 @@ importers:
       eslint:
         specifier: ^9.21.0
         version: 9.21.0(jiti@2.4.2)
+      eslint-config-prettier:
+        specifier: ^10.0.2
+        version: 10.0.2(eslint@9.21.0(jiti@2.4.2))
       eslint-plugin-package-json:
         specifier: ^0.26.0
         version: 0.26.0(@types/estree@1.0.6)(eslint@9.21.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)
@@ -2353,6 +2356,12 @@ packages:
     resolution: {integrity: sha512-cJzNJ7L+psWp5mXM7jBX+fjHtBvvh06RBlcweMhKD8jWqQw0G78hOW5tpVALGHGFPsBV+ot2H+pdDGJy6CV8pA==}
     peerDependencies:
       eslint: ^9.5.0
+
+  eslint-config-prettier@10.0.2:
+    resolution: {integrity: sha512-1105/17ZIMjmCOJOPNfVdbXafLCLj3hPmkmB7dLgt7XsQ/zkxSuDerE/xgO3RxoHysR1N1whmquY0lSn2O0VLg==}
+    hasBin: true
+    peerDependencies:
+      eslint: '>=7.0.0'
 
   eslint-fix-utils@0.2.1:
     resolution: {integrity: sha512-vHvLGmqdgPhZgH+cymlAlAqVuV22auB+uk/mgFdg5zotEtMHAHcOzNzhr5XOrDzyKGEQY2uQHoT+tS8P36/2CQ==}
@@ -6569,7 +6578,7 @@ snapshots:
       tinyrainbow: 2.0.0
     optional: true
 
-  '@vp-tw/eslint-config@0.0.26(@antfu/eslint-config@4.3.0(@eslint-react/eslint-plugin@1.29.0(eslint@9.21.0(jiti@2.4.2))(ts-api-utils@2.0.1(typescript@5.8.2))(typescript@5.8.2))(@typescript-eslint/utils@8.25.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2))(@vue/compiler-sfc@3.4.30)(eslint-plugin-react-hooks@5.1.0(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-react-refresh@0.4.18(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.8)(jiti@2.4.2)(tsx@4.19.3)(yaml@2.7.0)))(@types/eslint-config-prettier@6.11.3)(@types/react@19.0.10)(eslint-plugin-mdx@3.1.5(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-package-json@0.26.0(@types/estree@1.0.6)(eslint@9.21.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0))(eslint-plugin-react-compiler@19.0.0-beta-e1e972c-20250221(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))':
+  '@vp-tw/eslint-config@0.0.26(@antfu/eslint-config@4.3.0(@eslint-react/eslint-plugin@1.29.0(eslint@9.21.0(jiti@2.4.2))(ts-api-utils@2.0.1(typescript@5.8.2))(typescript@5.8.2))(@typescript-eslint/utils@8.25.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2))(@vue/compiler-sfc@3.4.30)(eslint-plugin-react-hooks@5.1.0(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-react-refresh@0.4.18(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.8)(jiti@2.4.2)(tsx@4.19.3)(yaml@2.7.0)))(@types/eslint-config-prettier@6.11.3)(@types/react@19.0.10)(eslint-config-prettier@10.0.2(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-mdx@3.1.5(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-package-json@0.26.0(@types/estree@1.0.6)(eslint@9.21.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0))(eslint-plugin-react-compiler@19.0.0-beta-e1e972c-20250221(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))':
     dependencies:
       '@antfu/eslint-config': 4.3.0(@eslint-react/eslint-plugin@1.29.0(eslint@9.21.0(jiti@2.4.2))(ts-api-utils@2.0.1(typescript@5.8.2))(typescript@5.8.2))(@typescript-eslint/utils@8.25.0(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2))(@vue/compiler-sfc@3.4.30)(eslint-plugin-react-hooks@5.1.0(eslint@9.21.0(jiti@2.4.2)))(eslint-plugin-react-refresh@0.4.18(eslint@9.21.0(jiti@2.4.2)))(eslint@9.21.0(jiti@2.4.2))(typescript@5.8.2)(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.8)(jiti@2.4.2)(tsx@4.19.3)(yaml@2.7.0))
       '@mui/types': 7.2.21(@types/react@19.0.10)
@@ -6579,6 +6588,7 @@ snapshots:
       local-pkg: 1.1.0
     optionalDependencies:
       '@types/eslint-config-prettier': 6.11.3
+      eslint-config-prettier: 10.0.2(eslint@9.21.0(jiti@2.4.2))
       eslint-plugin-mdx: 3.1.5(eslint@9.21.0(jiti@2.4.2))
       eslint-plugin-package-json: 0.26.0(@types/estree@1.0.6)(eslint@9.21.0(jiti@2.4.2))(jsonc-eslint-parser@2.4.0)
       eslint-plugin-react-compiler: 19.0.0-beta-e1e972c-20250221(eslint@9.21.0(jiti@2.4.2))
@@ -7420,6 +7430,10 @@ snapshots:
   eslint-config-flat-gitignore@2.1.0(eslint@9.21.0(jiti@2.4.2)):
     dependencies:
       '@eslint/compat': 1.2.7(eslint@9.21.0(jiti@2.4.2))
+      eslint: 9.21.0(jiti@2.4.2)
+
+  eslint-config-prettier@10.0.2(eslint@9.21.0(jiti@2.4.2)):
+    dependencies:
       eslint: 9.21.0(jiti@2.4.2)
 
   eslint-fix-utils@0.2.1(@types/estree@1.0.6)(eslint@9.21.0(jiti@2.4.2)):
