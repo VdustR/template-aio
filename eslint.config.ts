@@ -11,6 +11,9 @@ const prettierignorePath = path.resolve(__dirname, ".prettierignore");
 export default vdustr(
   {
     react: true,
+    storybook: true,
+    emotion: true,
+    tanstackQuery: true,
   },
   includeIgnoreFile(prettierignorePath),
 );
