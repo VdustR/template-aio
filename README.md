@@ -4,7 +4,7 @@ My all-in-one template for web development.
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/VdustR/template-aio)
 
-<a href="https://studio.firebase.google.com/import?url=">
+<a href="https://studio.firebase.google.com/import?url=https%3A%2F%2Fgithub.com%2FVdustR%2Ftemplate-aio">
   <picture>
     <source
       media="(prefers-color-scheme: dark)"
