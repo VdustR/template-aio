@@ -1,27 +1,25 @@
 import { Typography, useColorScheme } from "@mui/joy";
 import Switch from "@mui/joy/Switch";
 import useEventCallback from "@mui/utils/useEventCallback";
-import { useEffect, useState } from "react";
+import { useMemo } from "react";
+
+const systemScheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+  ? "dark"
+  : "light";
 
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();
-  const [mounted, setMounted] = useState(false);
-  const checked = mode === "dark";
+  const isDark = useMemo(
+    () => mode === "dark" || (mode !== "light" && systemScheme === "dark"),
+    [mode],
+  );
   const onChange = useEventCallback(() => {
-    setMode(mode === "light" ? "dark" : "light");
+    setMode(isDark ? "light" : "dark");
   });
-
-  useEffect(function bindMounted() {
-    setMounted(true);
-    return function cleanup() {
-      setMounted(false);
-    };
-  }, []);
-  if (!mounted) return null;
 
   return (
     <Switch
-      checked={checked}
+      checked={isDark}
       onChange={onChange}
       slotProps={{
         track: {
