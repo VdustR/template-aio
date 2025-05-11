@@ -16,6 +16,13 @@
     { "path": "packages/vite-react-19" },
   ],
   "settings": {
+    "[mdx]": {
+      "editor.codeActionsOnSave": [
+        "source.fixAll.eslint",
+        "source.fixAll.stylelint",
+        "source.formatDocument",
+      ],
+    },
     "css.validate": false,
     "editor.codeActionsOnSave": [
       "source.removeUnusedImports",
