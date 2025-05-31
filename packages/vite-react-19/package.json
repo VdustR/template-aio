@@ -13,6 +13,7 @@
     "@emotion/styled": "catalog:",
     "@fontsource/inter": "catalog:",
     "@mui/joy": "catalog:",
+    "@mui/utils": "catalog:",
     "@repo/css-reset": "workspace:*",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
