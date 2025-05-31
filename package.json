@@ -5,7 +5,7 @@
   "description": "Monorepo root",
   "type": "module",
   "scripts": {
-    "build": "pnpm run --filter vite-react-19 build --outDir ../../dist",
+    "changeset": "changeset",
     "checkTypes": "tsc -b --noEmit",
     "commit": "cz",
     "dev": "pnpm run --filter vite-react-19 dev",
@@ -14,7 +14,9 @@
     "lint:es": "eslint . --fix --report-unused-disable-directives --max-warnings 0",
     "lint:prettier": "prettier --ignore-unknown --write .",
     "lint:style": "stylelint '**/*.{css,js,jsx,ts,tsx}' --fix -i .stylelintignore",
-    "prepare": "husky"
+    "prepare": "husky",
+    "release": "changeset publish",
+    "version-packages": "changeset version"
   },
   "dependencies": {
     "@repo/dts": "workspace:*",
@@ -28,6 +30,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
+    "@changesets/cli": "^2.29.4",
     "@commitlint/cli": "catalog:",
     "@commitlint/config-conventional": "catalog:",
     "@commitlint/types": "catalog:",
