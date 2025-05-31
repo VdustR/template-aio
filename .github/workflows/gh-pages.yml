@@ -30,7 +30,7 @@ jobs:
             ${{ runner.os }}-pnpm-store-
       - name: Install dependencies
         run: pnpm install
-      - run: pnpm build --base=/${{ github.event.repository.name }}/
+      - run: pnpm run --filter vite-react-19 build --outDir ../../dist --base=/${{ github.event.repository.name }}/
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
