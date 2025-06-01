@@ -1,5 +1,12 @@
 # @repo/template-vite-react-19
 
+## 0.7.1
+
+### Patch Changes
+
+- 70646ea: update deps
+  - @repo/css-reset@0.7.1
+
 ## 0.7.0
 
 ### Minor Changes
