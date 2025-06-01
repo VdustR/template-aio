@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "catalog:",
-    "@changesets/cli": "^2.29.4",
+    "@changesets/cli": "catalog:",
     "@commitlint/cli": "catalog:",
     "@commitlint/config-conventional": "catalog:",
     "@commitlint/types": "catalog:",
@@ -68,7 +68,7 @@
     "typescript": "catalog:",
     "vitest": "catalog:"
   },
-  "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977",
+  "packageManager": "pnpm@10.11.0",
   "engines": {
     "node": ">=18",
     "pnpm": ">=8"

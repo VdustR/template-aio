@@ -19,6 +19,31 @@ My all-in-one template for web development.
   </picture>
 </a>
 
+## Contributing
+
+Contributions are welcome! Please read the [contributing guide](https://github.com/VdustR/template-aio/blob/main/CONTRIBUTING.md) for details.
+
+## Release
+
+1. Bump the version:
+
+   ```sh
+   pnpm version-packages
+   git commit -am "build: bump version"
+   ```
+
+2. Create a pull request to merge the changes into the `main` branch.
+
+3. After merging, publish the packages by running:
+
+   ```sh
+   git tag vX.Y.Z
+   git push origin vX.Y.Z
+   pnpm release
+   ```
+
+4. Finally, [draft a new release on GitHub](https://github.com/VdustR/template-aio/releases/new).
+
 ## License
 
 [MIT](./LICENSE)
