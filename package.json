@@ -8,7 +8,7 @@
     "changeset": "changeset",
     "checkTypes": "tsc -b --noEmit",
     "commit": "cz",
-    "dev": "pnpm run --filter vite-react-19 dev",
+    "dev": "pnpm run --filter template-vite-react-19 dev",
     "lint": "run-p lint:*",
     "lint:cspell": "cspell --no-summary --no-progress",
     "lint:es": "eslint . --fix --report-unused-disable-directives --max-warnings 0",
@@ -16,6 +16,7 @@
     "lint:style": "stylelint '**/*.{css,js,jsx,ts,tsx}' --fix -i .stylelintignore",
     "prepare": "husky",
     "release": "changeset publish",
+    "test": "vitest --passWithNoTests",
     "version-packages": "changeset version"
   },
   "dependencies": {
@@ -25,7 +26,6 @@
     "@types/fs-extra": "catalog:",
     "babel-plugin-react-compiler": "catalog:",
     "fs-extra": "catalog:",
-    "npm-run-all": "catalog:",
     "vite": "catalog:"
   },
   "devDependencies": {
@@ -57,6 +57,7 @@
     "jiti": "catalog:",
     "lint-staged": "catalog:",
     "pathe": "catalog:",
+    "playwright": "catalog:",
     "postcss-styled-syntax": "catalog:",
     "prettier": "catalog:",
     "stylelint": "catalog:",
@@ -64,7 +65,8 @@
     "stylelint-config-standard": "catalog:",
     "stylelint-prettier": "catalog:",
     "tsx": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vitest": "catalog:"
   },
   "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977",
   "engines": {

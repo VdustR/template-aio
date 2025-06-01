@@ -17,6 +17,7 @@ const config = isFormat
       "**/*": "cspell lint --no-must-find-files",
       "**/(*.{js,ts,jsx,tsx}|tsconfig.json|tsconfig.*.json)": () =>
         "pnpm run -w checkTypes",
+      "**/*.{js,jsx,ts,tsx}": "vitest related --run --passWithNoTests",
     };
 
 export default config;

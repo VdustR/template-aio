@@ -28,6 +28,8 @@
     "nvmrc",
     "pathe",
     "tsdoc",
+    "tsdown",
+    "unbundle",
     "unrs",
     "vite",
     "vitejs",

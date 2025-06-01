@@ -3,6 +3,7 @@ import type { ComponentProps, FC } from "react";
 import { Box, Button, Card, Typography } from "@mui/joy";
 import useEventCallback from "@mui/utils/useEventCallback";
 import { sxUtils } from "@utils/sx";
+import { add } from "@vdustr/template-aio-ts-lib/add";
 import { useState } from "react";
 
 import { Layout } from "./layout";
@@ -28,7 +29,7 @@ const App: FC = () => {
   const increase = useEventCallback<
     NonNullable<ComponentProps<typeof Button>["onClick"]>
   >(() => {
-    setCount((c) => c + 1);
+    setCount((c) => add(c, 1));
   });
   return (
     <Layout>

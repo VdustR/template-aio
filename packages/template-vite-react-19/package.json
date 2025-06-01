@@ -1,5 +1,5 @@
 {
-  "name": "vite-react-19",
+  "name": "@repo/template-vite-react-19",
   "version": "0.0.0",
   "private": true,
   "description": "Vite + React 19 boilerplate",
@@ -18,10 +18,10 @@
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "react": "catalog:",
-    "react-dom": "catalog:",
-    "vitest": "catalog:"
+    "react-dom": "catalog:"
   },
   "devDependencies": {
-    "vite-tsconfig-paths": "catalog:"
+    "vite-tsconfig-paths": "catalog:",
+    "vitest-browser-react": "catalog:"
   }
 }
