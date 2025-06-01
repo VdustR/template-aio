@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
-    "paths": {
-      "@utils/*": ["./src/utils/*"]
-    },
+    "allowJs": false,
+    "checkJs": false,
+    "declaration": true,
+    "declarationMap": true,
+    "isolatedDeclarations": true,
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo"
   },
   "extends": ["@repo/tsconfig/tsconfig.app"],
