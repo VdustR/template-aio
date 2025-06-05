@@ -5,7 +5,6 @@ export default mergeConfig(
   viteConfig,
   defineConfig({
     test: {
-      name: "browser",
       browser: {
         enabled: true,
         provider: "playwright",
