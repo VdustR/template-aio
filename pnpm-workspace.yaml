@@ -53,6 +53,7 @@ catalog:
   vite-tsconfig-paths: ^5.1.4
   vitest: ^3.1.4
   vitest-browser-react: ^0.2.0
+catalogMode: strict
 onlyBuiltDependencies:
   - esbuild
   - unrs-resolver
