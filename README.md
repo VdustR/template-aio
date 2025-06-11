@@ -44,6 +44,17 @@ Contributions are welcome! Please read the [contributing guide](https://github.c
 
 4. Finally, [draft a new release on GitHub](https://github.com/VdustR/template-aio/releases/new).
 
+## 🎯 Release Library
+
+This repository uses **[changesets/action](https://github.com/changesets/action)**, a GitHub Action that automates release management by creating a pull request with version updates and changelog entries whenever changes are pushed to the `main` branch.
+
+To enable seamless releases, ensure GitHub Actions have sufficient permissions to write to and manage pull requests in your repository. Navigate to:
+
+**Settings → Code and automation → Actions → General → Workflow permissions** and adjust the following:
+
+- ✅ Select **Read and write permissions**
+- ✅ Enable **Allow GitHub Actions to create and approve pull requests**
+
 ## License
 
 [MIT](./LICENSE)
