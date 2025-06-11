@@ -4,20 +4,6 @@
   "description": "A template for developing libraries",
   "license": "MIT",
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    },
-    "./*": {
-      "types": "./dist/*.d.ts",
-      "default": "./dist/*.js"
-    },
-    "./LICENSE": "./LICENSE",
-    "./README.md": "./README.md",
-    "./package": "./package.json",
-    "./package.json": "./package.json"
-  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
