@@ -1,5 +1,12 @@
 # @repo/template-vite-react-19
 
+## 0.7.2
+
+### Patch Changes
+
+- 0947278: remove vitest config name
+  - @repo/css-reset@0.7.2
+
 ## 0.7.1
 
 ### Patch Changes
