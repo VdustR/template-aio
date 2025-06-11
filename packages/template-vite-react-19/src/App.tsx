@@ -3,7 +3,7 @@ import type { ComponentProps, FC } from "react";
 import { Box, Button, Card, Typography } from "@mui/joy";
 import useEventCallback from "@mui/utils/useEventCallback";
 import { sxUtils } from "@utils/sx";
-import { add } from "@vdustr/template-aio-ts-lib/add";
+import { add } from "@vdustr/template-aio-ts-lib";
 import { useState } from "react";
 
 import { Layout } from "./layout";
