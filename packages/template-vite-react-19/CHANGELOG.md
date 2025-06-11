@@ -1,5 +1,12 @@
 # @repo/template-vite-react-19
 
+## 0.7.3
+
+### Patch Changes
+
+- d14be8f: fix template-ts-lib bundle
+  - @repo/css-reset@0.7.3
+
 ## 0.7.2
 
 ### Patch Changes
