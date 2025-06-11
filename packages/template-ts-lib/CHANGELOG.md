@@ -1,5 +1,12 @@
 # @vdustr/template-aio-ts-lib
 
+## 0.7.3
+
+### Patch Changes
+
+- d14be8f: fix template-ts-lib bundle
+- 6b80448: fake bump
+
 ## 0.7.2
 
 ## 0.7.1
