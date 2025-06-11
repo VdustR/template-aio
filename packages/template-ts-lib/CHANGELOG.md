@@ -1,5 +1,11 @@
 # @vdustr/template-aio-ts-lib
 
+## 0.7.5
+
+### Patch Changes
+
+- e6323c4: bump version
+
 ## 0.7.4
 
 ### Patch Changes
