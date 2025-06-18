@@ -1,5 +1,13 @@
 # @repo/template-vite-react-19
 
+## 0.7.6
+
+### Patch Changes
+
+- 618342b: up
+- Updated dependencies [618342b]
+  - @repo/css-reset@0.7.6
+
 ## 0.7.5
 
 ### Patch Changes
