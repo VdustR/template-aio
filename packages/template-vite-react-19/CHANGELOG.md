@@ -1,5 +1,12 @@
 # @repo/template-vite-react-19
 
+## 0.7.7
+
+### Patch Changes
+
+- ebb30aa: remove redundant assertion
+  - @repo/css-reset@0.7.7
+
 ## 0.7.6
 
 ### Patch Changes

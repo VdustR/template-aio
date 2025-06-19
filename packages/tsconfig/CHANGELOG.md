@@ -1,5 +1,7 @@
 # @repo/tsconfig
 
+## 0.7.7
+
 ## 0.7.6
 
 ### Patch Changes
