@@ -1,5 +1,11 @@
 # @repo/template-vite-react-19
 
+## 0.7.8
+
+### Patch Changes
+
+- @repo/css-reset@0.7.8
+
 ## 0.7.7
 
 ### Patch Changes
