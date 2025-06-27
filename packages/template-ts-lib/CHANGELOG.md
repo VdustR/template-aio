@@ -1,5 +1,11 @@
 # @vdustr/template-aio-ts-lib
 
+## 0.7.9
+
+### Patch Changes
+
+- ca08ec1: keep-one-ts-lib as individual job
+
 ## 0.7.8
 
 ### Patch Changes
