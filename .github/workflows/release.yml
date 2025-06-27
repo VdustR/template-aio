@@ -51,3 +51,16 @@ jobs:
           commit: "build: bump version"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/delete-package-versions@v5
+        with:
+          package-type: npm
+          package-name: template-aio-ts-lib
+          token: ${{ secrets.GITHUB_TOKEN }}
+          min-versions-to-keep: 1
+        # Allow to continue even if the package is not found.
+        #
+        # ```
+        # Error: delete version API failed. Package not found.
+        # ```
+        continue-on-error: true
