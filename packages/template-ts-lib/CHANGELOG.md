@@ -1,5 +1,11 @@
 # @vdustr/template-aio-ts-lib
 
+## 0.7.8
+
+### Patch Changes
+
+- 23aa56c: delete all except only latest version of template-aio-ts-lib
+
 ## 0.7.7
 
 ## 0.7.6
