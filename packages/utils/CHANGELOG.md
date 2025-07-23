@@ -1,5 +1,11 @@
 # @repo/utils
 
+## 0.7.10
+
+### Patch Changes
+
+- 629facc: up deps
+
 ## 0.7.9
 
 ## 0.7.8
