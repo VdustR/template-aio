@@ -1,5 +1,16 @@
 # @repo/template-vite-react-19
 
+## 0.8.0
+
+### Minor Changes
+
+- 8c76d5f: Upgraded various dependencies across the monorepo to their latest versions.
+
+### Patch Changes
+
+- Updated dependencies [8c76d5f]
+  - @repo/css-reset@0.8.0
+
 ## 0.7.10
 
 ### Patch Changes
