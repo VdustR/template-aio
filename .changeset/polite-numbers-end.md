@@ -7,4 +7,4 @@
 "@repo/utils": minor
 ---
 
-upgrade deps
+Upgraded various dependencies across the monorepo to their latest versions.
