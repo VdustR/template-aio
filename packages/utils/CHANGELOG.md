@@ -1,5 +1,11 @@
 # @repo/utils
 
+## 0.8.0
+
+### Minor Changes
+
+- 8c76d5f: Upgraded various dependencies across the monorepo to their latest versions.
+
 ## 0.7.10
 
 ### Patch Changes
