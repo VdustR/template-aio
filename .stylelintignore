@@ -147,8 +147,8 @@ dist
 
 !.env
 !.env.*
-.env.local
-.env.*.local
+*.local
+*.local.*
 
 /pnpm-lock.yaml
 dist
