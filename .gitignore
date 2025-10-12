@@ -141,5 +141,5 @@ dist
 
 !.env
 !.env.*
-.env.local
-.env.*.local
+*.local
+*.local.*
