@@ -17,6 +17,7 @@ catalog:
   "@types/lint-staged": ^14.0.0
   "@types/react": ^19.1.6
   "@types/react-dom": ^19.1.5
+  "@typescript/native-preview": ^7.0.0-dev.20251219.1
   "@vitejs/plugin-react": ^5.0.3
   "@vp-tw/eslint-config": ^0.2.0
   "@vp-tw/tsconfig": ^3.2.1

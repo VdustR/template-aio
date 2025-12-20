@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "changeset": "changeset",
-    "checkTypes": "tsc -b --noEmit",
+    "checkTypes": "tsgo -b --noEmit",
     "commit": "cz",
     "dev": "pnpm run --filter template-vite-react-19 dev",
     "lint": "run-p lint:*",
@@ -40,6 +40,7 @@
     "@tanstack/eslint-plugin-query": "catalog:",
     "@total-typescript/ts-reset": "catalog:",
     "@types/lint-staged": "catalog:",
+    "@typescript/native-preview": "catalog:",
     "@vitejs/plugin-react": "catalog:",
     "@vp-tw/eslint-config": "catalog:",
     "@vp-tw/tsconfig": "catalog:",
