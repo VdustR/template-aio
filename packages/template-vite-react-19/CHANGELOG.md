@@ -1,5 +1,13 @@
 # @repo/template-vite-react-19
 
+## 0.8.1
+
+### Patch Changes
+
+- a4c21ea: chore: tsgo for type checking
+- Updated dependencies [a4c21ea]
+  - @repo/css-reset@0.8.1
+
 ## 0.8.0
 
 ### Minor Changes
