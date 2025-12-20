@@ -15,7 +15,6 @@
     "/.changeset",
     "/.git",
     "/.prettierignore",
-    "/.stylelintignore",
     "/pnpm-lock.yaml"
   ],
   "includeRegExpList": ["[ -~]"],

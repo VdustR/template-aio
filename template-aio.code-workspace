@@ -20,7 +20,6 @@
     "[mdx]": {
       "editor.codeActionsOnSave": [
         "source.fixAll.eslint",
-        "source.fixAll.stylelint",
         "source.formatDocument",
       ],
     },
