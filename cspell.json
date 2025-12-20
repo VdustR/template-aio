@@ -15,7 +15,6 @@
     "/.changeset",
     "/.git",
     "/.prettierignore",
-    "/.stylelintignore",
     "/pnpm-lock.yaml"
   ],
   "includeRegExpList": ["[ -~]"],
@@ -32,6 +31,7 @@
     "pathe",
     "tsdoc",
     "tsdown",
+    "tsgo",
     "unbundle",
     "unrs",
     "vite",

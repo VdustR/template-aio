@@ -17,6 +17,7 @@ catalog:
   "@types/lint-staged": ^14.0.0
   "@types/react": ^19.1.6
   "@types/react-dom": ^19.1.5
+  "@typescript/native-preview": ^7.0.0-dev.20251219.1
   "@vitejs/plugin-react": ^5.0.3
   "@vp-tw/eslint-config": ^0.2.0
   "@vp-tw/tsconfig": ^3.2.1
@@ -42,10 +43,6 @@ catalog:
   prettier: ^3.6.2
   react: ^19.1.0
   react-dom: ^19.1.0
-  stylelint: ^16.24.0
-  stylelint-config-idiomatic-order: ^10.0.0
-  stylelint-config-standard: ^39.0.0
-  stylelint-prettier: ^5.0.3
   tsdown: ^0.12.5
   tsx: ^4.20.5
   typescript: ^5.9.2
