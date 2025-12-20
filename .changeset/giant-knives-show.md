@@ -1,10 +1,10 @@
 ---
-"@repo/css-reset": major
-"@repo/dts": major
-"@vdustr/template-aio-ts-lib": major
-"@repo/template-vite-react-19": major
-"@repo/tsconfig": major
-"@repo/utils": major
+"@repo/css-reset": patch
+"@repo/dts": patch
+"@vdustr/template-aio-ts-lib": patch
+"@repo/template-vite-react-19": patch
+"@repo/tsconfig": patch
+"@repo/utils": patch
 ---
 
 chore: tsgo for type checking
