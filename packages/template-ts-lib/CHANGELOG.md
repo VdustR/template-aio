@@ -1,5 +1,11 @@
 # @vdustr/template-aio-ts-lib
 
+## 0.8.1
+
+### Patch Changes
+
+- a4c21ea: chore: tsgo for type checking
+
 ## 0.8.0
 
 ### Minor Changes
