@@ -14,7 +14,6 @@
     "/*.code-workspace",
     "/.changeset",
     "/.git",
-    "/.prettierignore",
     "/pnpm-lock.yaml"
   ],
   "includeRegExpList": ["[ -~]"],
@@ -29,6 +28,7 @@
     "nums",
     "nvmrc",
     "oxfmt",
+    "oxfmtrc",
     "pathe",
     "tsdoc",
     "tsdown",
