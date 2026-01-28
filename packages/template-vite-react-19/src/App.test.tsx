@@ -5,7 +5,7 @@ import { Theme } from "./theme";
 
 describe("app", () => {
   it("should render the App component and increment count on button click", async () => {
-    const screen = render(
+    const screen = await render(
       <Theme>
         <App />
       </Theme>,
