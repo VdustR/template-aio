@@ -2,7 +2,7 @@
   "extensions": {
     "recommendations": [
       "dbaeumer.vscode-eslint",
-      "prettier.prettier-vscode",
+      "oxc.oxc-vscode",
       "streetsidesoftware.code-spell-checker",
       "TypeScriptTeam.native-preview",
     ],
@@ -18,10 +18,7 @@
   ],
   "settings": {
     "[mdx]": {
-      "editor.codeActionsOnSave": [
-        "source.fixAll.eslint",
-        "source.formatDocument",
-      ],
+      "editor.codeActionsOnSave": ["source.fixAll.eslint", "source.formatDocument"],
     },
     "css.validate": false,
     "editor.codeActionsOnSave": [
@@ -29,7 +26,7 @@
       "source.fixAll.eslint",
       "source.formatDocument",
     ],
-    "editor.defaultFormatter": "prettier.prettier-vscode",
+    "editor.defaultFormatter": "oxc.oxc-vscode",
     "editor.formatOnSave": true,
     "eslint.rules.customizations": [
       { "fixable": true, "rule": "perfectionist/*", "severity": "off" },

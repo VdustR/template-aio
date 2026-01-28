@@ -12,7 +12,9 @@
     "lint": "run-p lint:*",
     "lint:cspell": "cspell --no-summary --no-progress",
     "lint:es": "eslint . --fix --report-unused-disable-directives --max-warnings 0",
-    "lint:prettier": "prettier --ignore-unknown --write .",
+    "lint:es:dry": "eslint . --report-unused-disable-directives --max-warnings 0",
+    "lint:oxfmt": "oxfmt --write .",
+    "lint:oxfmt:dry": "oxfmt --check .",
     "prepare": "husky",
     "release": "changeset publish",
     "test": "vitest --passWithNoTests",
@@ -56,17 +58,17 @@
     "husky": "catalog:",
     "jiti": "catalog:",
     "lint-staged": "catalog:",
+    "oxfmt": "catalog:",
     "pathe": "catalog:",
     "playwright": "catalog:",
     "postcss-styled-syntax": "catalog:",
-    "prettier": "catalog:",
     "tsx": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"
   },
-  "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef",
   "engines": {
     "node": ">=18",
     "pnpm": ">=8"
-  }
+  },
+  "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef"
 }
