@@ -139,6 +139,9 @@ dist
 
 # END: https://github.com/github/gitignore/blob/3800aff/Node.gitignore
 
+# Vitest browser screenshots
+__screenshots__/
+
 !.env
 !.env.*
 *.local

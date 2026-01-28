@@ -26,9 +26,7 @@ const styles = {
 
 const App: FC = () => {
   const [count, setCount] = useState(0);
-  const increase = useEventCallback<
-    NonNullable<ComponentProps<typeof Button>["onClick"]>
-  >(() => {
+  const increase = useEventCallback<NonNullable<ComponentProps<typeof Button>["onClick"]>>(() => {
     setCount((c) => add(c, 1));
   });
   return (

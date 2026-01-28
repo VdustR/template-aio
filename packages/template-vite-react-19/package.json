@@ -21,6 +21,7 @@
     "react-dom": "catalog:"
   },
   "devDependencies": {
+    "@vitest/browser-playwright": "catalog:",
     "vite-tsconfig-paths": "catalog:",
     "vitest-browser-react": "catalog:"
   }

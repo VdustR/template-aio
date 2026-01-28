@@ -2,9 +2,6 @@
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.lib.tsbuildinfo"
   },
-  "extends": [
-    "@repo/tsconfig/tsconfig.app",
-    "@vp-tw/tsconfig/ext/lib/tsconfig"
-  ],
+  "extends": ["@repo/tsconfig/tsconfig.app", "@vp-tw/tsconfig/ext/lib/tsconfig"],
   "include": ["./src/**/*"]
 }

@@ -3,9 +3,7 @@ import Switch from "@mui/joy/Switch";
 import useEventCallback from "@mui/utils/useEventCallback";
 import { useMemo } from "react";
 
-const systemScheme = window.matchMedia("(prefers-color-scheme: dark)").matches
-  ? "dark"
-  : "light";
+const systemScheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();

@@ -9,13 +9,12 @@ const config = isFormat
   ? {
       "**/*": [
         "eslint --report-unused-disable-directives --fix --max-warnings=0 --no-error-on-unmatched-pattern --no-warn-ignored",
-        "prettier --ignore-unknown --write",
+        "oxfmt --write",
       ],
     }
   : {
       "**/*": "cspell lint --no-must-find-files",
-      "**/(*.{js,ts,jsx,tsx}|tsconfig.json|tsconfig.*.json)": () =>
-        "pnpm run -w checkTypes",
+      "**/(*.{js,ts,jsx,tsx}|tsconfig.json|tsconfig.*.json)": () => "pnpm run -w checkTypes",
       "**/*.{js,jsx,ts,tsx}": "vitest related --run --passWithNoTests",
     };
 

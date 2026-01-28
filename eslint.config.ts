@@ -16,4 +16,11 @@ export default vdustr(
     tanstackQuery: true,
   },
   includeIgnoreFile(prettierignorePath),
+  {
+    files: ["**/package.json"],
+    rules: {
+      // sorted by oxfmt
+      "package-json/order-properties": "off",
+    },
+  },
 );

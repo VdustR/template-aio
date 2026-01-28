@@ -44,7 +44,6 @@ We use [Changesets](https://github.com/changesets/changesets) to manage versioni
    ```
 
    Changeset will then prompt you to:
-
    - Select which packages have been affected by your changes.
    - Choose the type of change for each package (major, minor, or patch).
    - Write a brief description of the change. This description will be used in the changelog.
