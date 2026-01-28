@@ -1,5 +1,5 @@
 ---
-"@vdustr/template-aio-ts-lib": patch
+"@vdustr/template-aio-ts-lib": major
 ---
 
 build: modernize toolchain and dev dependencies
