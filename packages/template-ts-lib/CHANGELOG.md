@@ -1,5 +1,11 @@
 # @vdustr/template-aio-ts-lib
 
+## 1.0.1
+
+### Patch Changes
+
+- 705e5c4: Update copyright year to 2026 and use HTTPS for URLs
+
 ## 1.0.0
 
 ### Major Changes
