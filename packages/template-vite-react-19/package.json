@@ -1,6 +1,6 @@
 {
   "name": "@repo/template-vite-react-19",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "Vite + React 19 boilerplate",
   "type": "module",
