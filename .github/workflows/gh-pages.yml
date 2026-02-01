@@ -3,20 +3,39 @@ name: GitHub Pages
 on:
   push:
     branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      - run: pnpm run --filter template-vite-react-19 build --outDir ../../dist --base=/${{ github.event.repository.name }}/
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Build
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: pnpm run --filter template-vite-react-19 build --outDir ../../dist --base="/$REPO_NAME/"
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          branch: gh-pages
-          folder: dist
-          clean: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
