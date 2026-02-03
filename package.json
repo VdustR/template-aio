@@ -9,7 +9,7 @@
     "checkTypes": "tsgo -b --noEmit",
     "commit": "cz",
     "dev": "pnpm run --filter template-vite-react-19 dev",
-    "lint": "run-p lint:*",
+    "lint": "run-s lint:cspell lint:es lint:oxfmt",
     "lint:cspell": "cspell --no-summary --no-progress",
     "lint:es": "eslint . --fix --report-unused-disable-directives --max-warnings 0",
     "lint:es:dry": "eslint . --report-unused-disable-directives --max-warnings 0",
