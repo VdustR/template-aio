@@ -9,7 +9,7 @@ const config = isFormat
   ? {
       "**/*": [
         "eslint --report-unused-disable-directives --fix --max-warnings=0 --no-error-on-unmatched-pattern --no-warn-ignored",
-        "oxfmt --write",
+        "oxfmt --write --no-error-on-unmatched-pattern",
       ],
     }
   : {
