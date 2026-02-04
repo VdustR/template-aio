@@ -1,5 +1,12 @@
 # @vdustr/template-aio-ts-lib
 
+## 1.0.2
+
+### Patch Changes
+
+- 638b1b7: Run lint scripts sequentially with explicit order (cspell → eslint → oxfmt) and fix lint-staged oxfmt for unsupported file types
+- 44cdeeb: Update @vp-tw/eslint-config to 1.0.5 and remove manual package-json rule override
+
 ## 1.0.1
 
 ### Patch Changes
