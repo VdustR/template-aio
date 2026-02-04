@@ -11,11 +11,4 @@ export default vdustr(
   {
     ignores: oxfmtConfig.ignorePatterns,
   },
-  {
-    files: ["**/package.json"],
-    rules: {
-      // sorted by oxfmt
-      "package-json/order-properties": "off",
-    },
-  },
 );

@@ -21,7 +21,7 @@ catalog:
   "@typescript-eslint/utils": ^8.54.0
   "@vitejs/plugin-react": ^5.1.2
   "@vitest/browser-playwright": ^4.0.18
-  "@vp-tw/eslint-config": ^1.0.2
+  "@vp-tw/eslint-config": ^1.0.5
   "@vp-tw/tsconfig": ^4.0.0
   babel-plugin-react-compiler: 19.1.0-rc.3
   commitizen: ^4.3.1
