@@ -1,4 +1,11 @@
 {
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
-  "ignorePatterns": ["pnpm-lock.yaml", "dist/**", ".changeset/**", "CHANGELOG.md", "LICENSE"]
+  "ignorePatterns": [
+    "pnpm-lock.yaml",
+    "dist/**",
+    ".changeset/**",
+    ".worktrees/**",
+    "CHANGELOG.md",
+    "LICENSE"
+  ]
 }

@@ -139,6 +139,9 @@ dist
 
 # END: https://github.com/github/gitignore/blob/3800aff/Node.gitignore
 
+# Git worktrees
+/.worktrees/
+
 # Vitest browser screenshots
 __screenshots__/
 
