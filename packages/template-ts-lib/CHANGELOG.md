@@ -1,5 +1,11 @@
 # @vdustr/template-aio-ts-lib
 
+## 1.0.3
+
+### Patch Changes
+
+- 6bd2ce5: Add .worktrees/ to gitignore and linter/formatter ignore configurations for git worktree support
+
 ## 1.0.2
 
 ### Patch Changes

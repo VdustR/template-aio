@@ -1,6 +1,6 @@
 {
   "name": "@vdustr/template-aio-ts-lib",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A template for developing libraries",
   "license": "MIT",
   "type": "module",
