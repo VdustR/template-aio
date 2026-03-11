@@ -9,7 +9,7 @@ on:
 jobs:
   stale-branches:
     name: Delete Stale Branches
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: read
