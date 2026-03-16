@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      issues: write
       pull-requests: read
     steps:
       - uses: crs-k/stale-branches@v8.2.2
