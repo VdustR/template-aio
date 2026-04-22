@@ -37,10 +37,10 @@
     "@commitlint/types": "catalog:",
     "@emotion/eslint-plugin": "catalog:",
     "@eslint-react/eslint-plugin": "catalog:",
-    "@eslint/compat": "catalog:",
     "@tanstack/eslint-plugin-query": "catalog:",
     "@total-typescript/ts-reset": "catalog:",
     "@types/lint-staged": "catalog:",
+    "@types/node": "catalog:",
     "@typescript-eslint/utils": "catalog:",
     "@typescript/native-preview": "catalog:",
     "@vitejs/plugin-react": "catalog:",
@@ -52,7 +52,6 @@
     "eslint-config-prettier": "catalog:",
     "eslint-plugin-package-json": "catalog:",
     "eslint-plugin-react-compiler": "catalog:",
-    "eslint-plugin-react-hooks": "catalog:",
     "eslint-plugin-react-refresh": "catalog:",
     "eslint-plugin-storybook": "catalog:",
     "fast-glob": "catalog:",
@@ -61,7 +60,6 @@
     "lint-staged": "catalog:",
     "npm-run-all2": "catalog:",
     "oxfmt": "catalog:",
-    "pathe": "catalog:",
     "playwright": "catalog:",
     "postcss-styled-syntax": "catalog:",
     "tsx": "catalog:",
@@ -69,7 +67,7 @@
     "vitest": "catalog:"
   },
   "engines": {
-    "node": ">=18",
+    "node": "^20.19.0 || ^22.13.0 || >=24",
     "pnpm": ">=8"
   },
   "packageManager": "pnpm@10.17.0+sha512.fce8a3dd29a4ed2ec566fb53efbb04d8c44a0f05bc6f24a73046910fb9c3ce7afa35a0980500668fa3573345bd644644fa98338fa168235c80f4aa17aa17fbef"
