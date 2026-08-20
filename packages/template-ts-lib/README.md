@@ -6,4 +6,4 @@ A template for developing libraries.
 
 [MIT](./LICENSE)
 
-Copyright (c) 2024-2026 ViPro <vdustr@gmail.com> (<https://vdustr.dev>)
+Copyright (c) 2024-2026 ViPro <vdustr@gmail.com> (<https://vdustr.github.io>)
