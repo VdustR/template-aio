@@ -58,6 +58,7 @@ onlyBuiltDependencies:
   - unrs-resolver
 
 overrides:
+  eslint-plugin-vue>postcss-selector-parser: 7.1.3
   undici-types: ^8.1.0
 
 packages:
