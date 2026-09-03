@@ -62,6 +62,7 @@
     "oxfmt": "catalog:",
     "playwright": "catalog:",
     "postcss-styled-syntax": "catalog:",
+    "storybook": "catalog:",
     "tsx": "catalog:",
     "typescript": "catalog:",
     "vitest": "catalog:"

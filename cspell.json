@@ -24,6 +24,7 @@
     "antfu",
     "commitizen",
     "esbuild",
+    "humanfs",
     "jiti",
     "jsdoc",
     "nums",
