@@ -1,5 +1,11 @@
 # @vdustr/template-aio-ts-lib
 
+## 2.0.2
+
+### Patch Changes
+
+- ea26fe9: Update vulnerable transitive dependencies, remove the obsolete YAML reader dependency chain, and bound nested glob parsing with a local parser patch.
+
 ## 2.0.1
 
 ### Patch Changes
