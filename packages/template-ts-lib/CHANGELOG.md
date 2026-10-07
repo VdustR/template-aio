@@ -1,5 +1,11 @@
 # @vdustr/template-aio-ts-lib
 
+## 2.0.1
+
+### Patch Changes
+
+- 464dca8: Update transitive parser dependencies to fix malformed URI validation and denial of service when parsing YAML merges or TOML comments.
+
 ## 2.0.0
 
 ### Major Changes
