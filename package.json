@@ -18,6 +18,7 @@
     "prepare": "husky",
     "release": "changeset publish",
     "test": "vitest --passWithNoTests",
+    "test:security": "vitest run --project dependency-security",
     "version-packages": "changeset version"
   },
   "dependencies": {
