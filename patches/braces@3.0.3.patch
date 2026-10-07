@@ -1,0 +1,24 @@
+diff --git a/lib/parse.js b/lib/parse.js
+index 3a6988e..5203ea3 100644
+--- a/lib/parse.js
++++ b/lib/parse.js
+@@ -43,2 +43,9 @@ const parse = (input, options = {}) => {
+   const stack = [ast];
++  // Bound AST depth before recursive compile, expand and stringify walkers run.
++  const pushBlock = node => {
++    if (stack.length > 128) {
++      throw new SyntaxError('Input nesting depth exceeds maximum of 128');
++    }
++    stack.push(node);
++  };
+   let block = ast;
+@@ -146,3 +153,3 @@ const parse = (input, options = {}) => {
+       block = push({ type: 'paren', nodes: [] });
+-      stack.push(block);
++      pushBlock(block);
+       push({ type: 'text', value });
+@@ -212,3 +219,3 @@ const parse = (input, options = {}) => {
+       block = push(brace);
+-      stack.push(block);
++      pushBlock(block);
+       push({ type: 'open', value });

@@ -34,6 +34,22 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Verify published package version
+        if: steps.changesets.outputs.published == 'true'
+        run: |
+          node --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          import { execFileSync } from 'node:child_process';
+          import { readFileSync } from 'node:fs';
+
+          const { name, version } = JSON.parse(readFileSync('packages/template-ts-lib/package.json', 'utf8'));
+          const published = JSON.parse(execFileSync('pnpm', [
+            'view', `${name}@${version}`, 'version', '--registry=https://npm.pkg.github.com', '--json',
+          ], { encoding: 'utf8' }));
+          assert.equal(published, version);
+          console.log(`Verified ${name}@${version} from GitHub Packages`);
+          NODE
+
   keep-one-ts-lib:
     name: Keep only one version of template-aio-ts-lib
     needs: release
