@@ -33,10 +33,30 @@ jobs:
   types:
     name: Types
     runs-on: ubuntu-latest
+    env:
+      TSBUILDINFO_PATHS: |
+        node_modules/.tmp/*.tsbuildinfo
+        packages/*/node_modules/.tmp/*.tsbuildinfo
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/setup
-      - run: pnpm run checkTypes
+      - name: Restore TypeScript build info
+        id: typecheck-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: ${{ env.TSBUILDINFO_PATHS }}
+          key: typecheck-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ github.sha }}
+          restore-keys: |
+            typecheck-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml') }}-
+      - run: pnpm run checkTypes --verbose --extendedDiagnostics
+      - name: Verify incremental invalidation
+        run: pnpm run test:typecheck
+      - name: Save TypeScript build info
+        if: github.ref == 'refs/heads/main' && steps.typecheck-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: ${{ env.TSBUILDINFO_PATHS }}
+          key: typecheck-v1-${{ runner.os }}-${{ runner.arch }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ github.sha }}
 
   security:
     name: Parser security
