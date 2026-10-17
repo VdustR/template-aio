@@ -7,7 +7,14 @@ export default defineConfig({
       {
         test: {
           name: "dependency-security",
-          include: ["scripts/**/*.test.mjs"],
+          include: ["scripts/dependency-security.test.mjs"],
+        },
+      },
+      {
+        test: {
+          name: "typecheck-cache",
+          include: ["scripts/typecheck-cache.test.mjs"],
+          testTimeout: 30000,
         },
       },
     ],

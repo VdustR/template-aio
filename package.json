@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "changeset": "changeset",
-    "checkTypes": "tsgo -b --noEmit",
+    "checkTypes": "node node_modules/typescript-native/bin/tsc -b --noEmit --incremental",
     "commit": "cz",
     "dev": "pnpm run --filter template-vite-react-19 dev",
     "lint": "run-s lint:cspell lint:es lint:oxfmt",
@@ -19,6 +19,7 @@
     "release": "changeset publish",
     "test": "vitest --passWithNoTests",
     "test:security": "vitest run --project dependency-security",
+    "test:typecheck": "vitest run --project typecheck-cache",
     "version-packages": "changeset version"
   },
   "dependencies": {
@@ -43,7 +44,6 @@
     "@types/lint-staged": "catalog:",
     "@types/node": "catalog:",
     "@typescript-eslint/utils": "catalog:",
-    "@typescript/native-preview": "catalog:",
     "@vitejs/plugin-react": "catalog:",
     "@vp-tw/eslint-config": "catalog:",
     "@vp-tw/tsconfig": "catalog:",
@@ -66,6 +66,7 @@
     "storybook": "catalog:",
     "tsx": "catalog:",
     "typescript": "catalog:",
+    "typescript-native": "catalog:",
     "vitest": "catalog:"
   },
   "engines": {

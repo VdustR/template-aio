@@ -19,6 +19,21 @@ My all-in-one template for web development.
   </picture>
 </a>
 
+## Type checking
+
+Run `pnpm run checkTypes` to check all projects with the pinned native TypeScript
+nightly and reuse each project's build info. The `typescript-native` npm alias
+keeps this compiler separate from TypeScript 6, whose JavaScript API is still
+required by ESLint and declaration build tools. The workspace editor settings
+point to the same native compiler. Restart the editor's TypeScript language
+server after upgrading the pinned SDK.
+
+CI restores build info after installing dependencies and saves successful checks
+on `main`. The cache is scoped by platform and lockfile; the compiler validates
+source and configuration changes before reusing diagnostics. Run
+`pnpm run test:typecheck` to verify cross-package and global declaration changes
+against the installed compiler before updating the nightly pin.
+
 ## 🎯 Release Library
 
 This repository uses **[changesets/action](https://github.com/changesets/action)**, a GitHub Action that automates release management by creating a pull request with version updates and changelog entries whenever changes are pushed to the `main` branch.
