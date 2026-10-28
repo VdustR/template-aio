@@ -1,5 +1,11 @@
 # @vdustr/template-aio-ts-lib
 
+## 2.0.3
+
+### Patch Changes
+
+- 2de7ffb: Update Storybook and fast-uri to their patched releases.
+
 ## 2.0.2
 
 ### Patch Changes
